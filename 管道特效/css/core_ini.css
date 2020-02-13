@@ -1,0 +1,82 @@
+/*
+ * 管道 w 表示水平方向  h表示垂直方向
+ */
+
+.conduit_w {
+    height: 20px;
+    box-shadow: inset 0 0 10px 1px #209fc6;
+}
+
+.conduit_h {
+    width: 20px;
+    box-shadow: inset 0 0 10px 1px #209fc6;
+}
+
+
+/*
+ * 转接头
+ */
+
+.adapter_2 {
+    box-shadow: inset 0 0 10px 1px #209fc6;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    z-index: 50;
+}
+
+.adapter_3 {
+    box-shadow: inset 0 0 10px 1px #209fc6;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    z-index: 50;
+}
+
+.rotate360 {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    -moz-transform: rotate(360deg);
+    /* Firefox */
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(360deg);
+    /* Opera */
+}
+
+.rotate270 {
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -moz-transform: rotate(270deg);
+    /* Firefox */
+    -webkit-transform: rotate(270deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(270deg);
+    /* Opera */
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+}
+
+.rotate90 {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -webkit-transform: rotate(90deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(90deg);
+    /* Opera */
+}

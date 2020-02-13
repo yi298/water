@@ -1,0 +1,622 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+// 临时边框
+.border {
+  padding: 0;
+  border: 1px solid #024381;
+}
+
+// 共用背景样式
+.bg {
+  width: 100%;
+  background-size: 100% 100%;
+}
+// 共用头部
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 107px;
+  // background-color: #07144b;
+  .header_logo {
+    width: 152px;
+    height: 30px;
+    font-size: 0;
+    margin-left: 50px;
+  }
+  .header_right {
+    height: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    .header-logout {
+      width: 90px;
+      height: 37px;
+      font-size: 0;
+      margin-left: 33px;
+      cursor: pointer;
+    }
+  }
+}
+// 共用主体
+.com_main {
+  flex-grow: 1;
+  padding: 10px 5px;
+  // background-color: #261a67;
+}
+// 共用标题
+.com_title {
+  font-size: 18px;
+  padding: 50px 0 0 40px;
+  span {
+    width: 10px;
+    height: 22px;
+    margin-right: 8px;
+    background-color: #fee617;
+  }
+}
+.pt {
+  padding-top: 0 !important;
+}
+// 颜色
+.yellow {
+  color: #fae815;
+}
+.red {
+  color: #ff0500;
+}
+.orange {
+  color: #fa8d01;
+}
+.blue {
+  color: #04ffff;
+}
+.green {
+  color: green;
+}
+// 共用大标题
+.com-mid_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  .com-mid_text {
+    width: 232px;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .com-mid-title_cl {
+    width: 36px;
+    height: 57px;
+  }
+  .com-mid-title_cr {
+    width: 36px;
+    height: 57px;
+  }
+}
+
+// layui
+.layui-form {
+
+  .layui-form-item {
+    margin: 0;
+    font-size: 16px;
+    color: #ccc;
+    margin: 15px 0;
+    .layui-form-label {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+    }
+    .layui-input-inline {
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
+    .layui-form-mid {
+      padding: 0 !important;
+      line-height: normal;
+    }
+    .input-null {
+      width: 130px;
+      margin: 0 10px;
+      // height: 22px;
+      text-align: center;
+      box-shadow: inset 0 0 8px 1px rgba(255, 255, 255, 0.4);
+    }
+
+    .input-text {
+      color: #4bc5cf;
+    }
+  }
+}
+
+// 登录页面
+.login_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login_box {
+    position: relative;
+    width: 716px;
+    height: 642px;
+    // margin: auto;
+    .login_title {
+      height: 43px;
+      font-size: 45px;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      margin-top: 77px;
+      margin-bottom: 15px;
+    }
+    .login_title2 {
+      text-align: center;
+      height: 34px;
+      font-size: 34px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      opacity: 0.38;
+    }
+    .login_form {
+      .login_cont {
+        width: 438px;
+        height: 82px;
+        position: absolute;
+        top: 213px;
+        left: 136px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        .login-cont_i {
+          width: 36px;
+          height: 36px;
+        }
+        input {
+          background: none;
+          margin-left: 15px;
+          font-size: 25px;
+          color: #fff;
+          &::-webkit-input-placeholder {
+            color: #fff;
+          }
+          &:-moz-placeholder {
+            color: #fff;
+          }
+          &::-moz-placeholder {
+            color: #fff;
+          }
+          &:-ms-input-placeholder {
+            color: #fff;
+          }
+        }
+      }
+      .password {
+        top: 320px;
+      }
+      .login_button {
+        width: 444px;
+        height: 87px;
+        position: absolute;
+        bottom: 115px;
+        left: 136px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// 光伏页面
+.PV_main {
+  .PV_left {
+    .PV-left_on {
+      height: 80%;
+      min-height: 450px;
+      .layui-form{
+        padding: 10px 60px;
+        padding-bottom: 5px;
+      }
+      .PV-cardbox {
+        width: 370px;
+        margin: auto;
+        .row {
+          .layui-card {
+            background: none;
+            border: 1px solid #5365a0;
+            margin: 0;
+            padding: 0;
+            .layui-card-header {
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              color: #ccc;
+              border: none;
+              box-shadow: inset 0 0 8px 0 #4288b9;
+              padding: 0;
+              margin: 0;
+              font-size: 16px;
+            }
+            .layui-card-body {
+              font-size: 16px;
+              height: 50px;
+              line-height: 50px;
+              margin: 0;
+              text-align: center;
+              color: #4bc5cf;
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .PV-left_und {
+      height: 20%;
+      min-height: 112px;
+      .PV_meter {
+        display: flex;
+        justify-content: center;
+        .PV-meter_li {
+          width: 30px;
+          height: 40px;
+          line-height: 40px;
+          margin: 20px 3px;
+          text-align: center;
+          font-size: 25px;
+          box-shadow: inset 0 0 12px 1px #4288b9;
+        }
+      }
+    }
+  }
+  .PV_right {
+    .PV-right_on {
+      height: 35%;
+      min-height: 196px;
+      display: flex;
+      flex-direction: column;
+      .PV_time {
+        flex-grow: 1;
+        display: flex;
+        margin: 20px 130px;
+        padding: 0 50px;
+        border: 1px solid #3f4ea8;
+        border-top: none;
+        border-right: none;
+        justify-content: space-around;
+        align-items: center;
+        .PV-time_li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .PV-time_p {
+            font-size: 15px;
+          }
+          .PV-time_bg {
+            font-size: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .PV-time_num {
+              font-size: 15px;
+            }
+            .PV-time_danwei {
+              font-size: 15px;
+            }
+          }
+          .PV-time-w1 {
+            width: 60px;
+            height: 60px;
+          }
+          .PV-time-w2 {
+            width: 98px;
+            height: 98px;
+          }
+          .PV-time-w3 {
+            width: 105px;
+            height: 105px;
+          }
+          .PV-time-w4 {
+            width: 82px;
+            height: 82px;
+          }
+          .PV-time-w5 {
+            width: 107px;
+            height: 107px;
+          }
+        }
+      }
+    }
+    .PV-right_mid {
+      height: 30%;
+      min-height: 168px;
+      .PV_alarm {
+        padding: 0 60px;
+        .PV-alarm_title {
+          font-size: 15px;
+          margin: 20px 0;
+        }
+        .PV-alarm_dd {
+          font-size: 15px;
+          margin: 10px 0;
+          .PV-alarm-dd_badge {
+            box-shadow: inset 0 0 12px 1px #4288b9;
+            font-size: 16px;
+            font-weight: bold;
+            color: #00ffff;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .PV-right_und {
+      height: 35%;
+      min-height: 196px;
+    }
+  }
+}
+
+// 电池堆2
+.bat2_main {
+  .com_title {
+    padding: 34px 0 0 20px;
+  }
+  .bat2_on {
+    height: 70%;
+    .bat2-on_box {
+      width: 30%;
+      height: 100%;
+      padding: 0;
+      .on_row {
+        height: 50%;
+        .layui-form{
+
+        }
+      }
+    }
+    .bat2-on_mid {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      .com-mid_cont {
+        flex-grow: 1;
+        .bat2-mid_left {
+          .bat2-mid_form {
+            height: 65%;
+          }
+          .bat2-mid_num {
+            height: 35%;
+          }
+        }
+        .bat2-mid_right {
+          .bat2-mid_echarts {
+            height: 65%;
+          }
+          .bat2-mid_echartsNum {
+            height: 35%;
+          }
+        }
+      }
+    }
+  }
+  .bat2_dow {
+    height: 30%;
+    position: relative;
+    .dow_ZS {
+      width: 25px;
+      height: 45px;
+      position: absolute;
+      top: -23px;
+      left: 0;
+    }
+    .dow_ZS2 {
+      width: 25px;
+      height: 45px;
+      position: absolute;
+      top: -23px;
+      right: 0;
+    }
+    .bat2-linkBody {
+      position: relative;
+      .bat2_link {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        left: 160px;
+        height: 100%;
+        // icon宽高
+        .bat2-link_icon1 {
+          width: 71px;
+          height: 86px;
+        }
+        .bat2-link_icon2 {
+          width: 57px;
+          height: 63px;
+        }
+        .bat2-link_icon3 {
+          width: 77px;
+          height: 84px;
+        }
+        // 开关宽高
+        .bat2-link-wkey {
+          width: 67px;
+          height: 18px;
+        }
+        .bat2-link-hkey {
+          width: 15px;
+          height: 49px;
+        }
+        // kg宽高
+        .bat2-link_kg {
+          width: 31px;
+          height: 28px;
+        }
+        // 电池宽高
+        .bat2-link-dc {
+          width: 58px;
+          height: 95px;
+        }
+        // 横管道
+        .bat2-link_hr {
+          box-shadow: inset 0 0 3px 1px #3d8ec1;
+          font-size: 0;
+          height: 6px;
+        }
+        // 竖管道
+        .bat2-link_hr2 {
+          box-shadow: inset 0 0 3px 1px #3d8ec1;
+          font-size: 0;
+          width: 6px;
+        }
+        // 管道宽度{
+        .link_w1 {
+          // 短
+          width: 40px;
+        }
+        .link_w2 {
+          // 长
+          width: 164px;
+          position: relative;
+        }
+        .link_h1 {
+          height: 117px;
+        }
+        .link_h2 {
+          height: 25px;
+        }
+        .bat2-link_iconBody {
+          display: flex;
+          align-items: center;
+          .bat2-link-wkeyBody {
+            position: relative;
+            .wkey2 {
+              position: absolute;
+              bottom: -20px;
+            }
+          }
+          .bat2-link_kg {
+            position: relative;
+            .bat2-link-kg_ul {
+              position: absolute;
+              top: 15px;
+              left: 0;
+              .bat2-link-kg_p {
+                font-size: 12px;
+                width: max-content;
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+        .bat2-link_dcBody {
+          display: flex;
+          position: absolute;
+          left: 410px;
+          .bat2-link_liDc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            .bat2-link-dc {
+              position: relative;
+              .dc_text {
+                width: max-content;
+                position: absolute;
+                top: 16px;
+                left: 65px;
+                .dc-text_numb {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 故障模拟
+.fault_main {
+  .on_row {
+    height: 35%;
+  }
+  .und_row {
+    height: 65%;
+  }
+
+  .fault_cont {
+    text-align: center;
+    padding: 40px 0;
+    .fault-cont_p {
+      font-size: 18px;
+    }
+    .fault-cont_img {
+      width: 574px;
+      height: 454px;
+      margin: auto;
+    }
+  }
+  .fault_biaoti {
+    width: 275px;
+    height: 75px;
+    margin: 35px auto 0;
+  }
+  // 异常
+  .abn {
+    color: rgba(255, 0, 0, 1);
+  }
+  .nor {
+    color: #01c0ff;
+  }
+}
+
+// 电池堆2
+.bat3_main {
+  .com_title {
+    padding: 34px 0 0 20px;
+  }
+  .on_row {
+    height: 35%;
+  }
+  .und_row {
+    height: 65%;
+  }
+
+  .bat3_left {
+    .com_title {
+      padding-left: 40px;
+    }
+  }
+  .bat3_mid {
+    .com_title {
+      padding-left: 60px;
+    }
+  }
+  .bat3_right {
+    .com-mid_title {
+      margin-top: 40px;
+    }
+  }
+}

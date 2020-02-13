@@ -1,0 +1,298 @@
+@media screen and (max-width: 1366px) {
+  .header {
+    height: 74.9px;
+  }
+  .header .header_logo {
+    width: 106.4px;
+    height: 21px;
+    margin-left: 35px;
+  }
+  .header .header_right {
+    height: 12.6px;
+    font-size: 12.6px;
+    font-weight: 400;
+    display: flex;
+    margin-right: 35px;
+  }
+  .header .header_right .header-logout {
+    width: 63px;
+    height: 25.9px;
+    margin-left: 23.1px;
+  }
+  .layui-form .layui-form-item {
+    font-size: 9.6px;
+    margin: 9px 0;
+  }
+  .layui-form .layui-form-item .input-null {
+    width: 78px;
+    margin: 0 6px;
+    box-shadow: inset 0 0 4.8px 1px rgba(255, 255, 255, 0.4);
+  }
+  .login_main .login_box {
+    width: 501.2px;
+    height: 449.4px;
+  }
+  .login_main .login_box .login_title {
+    height: 30.1px;
+    font-size: 31.5px;
+    margin-top: 53.9px;
+    margin-bottom: 10.5px;
+  }
+  .login_main .login_box .login_title2 {
+    height: 23.8px;
+    font-size: 23.8px;
+  }
+  .login_main .login_box .login_form .login_cont {
+    width: 306.6px;
+    height: 57.4px;
+    top: 149.1px;
+    left: 96.6px;
+    padding: 0 14px;
+  }
+  .login_main .login_box .login_form .login_cont .login-cont_i {
+    width: 25.2px;
+    height: 25.2px;
+  }
+  .login_main .login_box .login_form .login_cont input {
+    margin-left: 10.5px;
+    font-size: 17.5px;
+  }
+  .login_main .login_box .login_form .password {
+    top: 224px;
+  }
+  .login_main .login_box .login_form .login_button {
+    width: 310.8px;
+    height: 60.9px;
+    bottom: 80.5px;
+    left: 95.2px;
+  }
+  .com_main {
+    flex-grow: 1;
+    padding: 7px 3.5px;
+  }
+  .com_title {
+    font-size: 12.6px;
+    padding: 35px 0 0 28px;
+  }
+  .com_title span {
+    width: 7px;
+    height: 15.4px;
+    margin-right: 5.6px;
+  }
+  .com-mid_title {
+    margin: 14px 0 7px 0;
+  }
+  .com-mid_title .com-mid_text {
+    width: 162.4px;
+    font-size: 23.8px;
+  }
+  .com-mid_title .com-mid-title_cl {
+    width: 25.2px;
+    height: 39.9px;
+  }
+  .com-mid_title .com-mid-title_cr {
+    width: 25.2px;
+    height: 39.9px;
+  }
+  .fault_main .fault_cont {
+    padding: 28px 0;
+  }
+  .fault_main .fault_cont .fault-cont_p {
+    font-size: 12.6px;
+  }
+  .fault_main .fault_cont .fault-cont_img {
+    width: 401.8px;
+    height: 317.8px;
+  }
+  .fault_main .fault_biaoti {
+    width: 192.5px;
+    height: 52.5px;
+    margin: 24.5px auto 0;
+  }
+  .bat2_main .com_title {
+    padding: 22.1px 0 0 13px;
+  }
+  .bat2_main .bat2_dow .dow_ZS {
+    width: 16.25px;
+    height: 29.25px;
+    top: -14.95px;
+  }
+  .bat2_main .bat2_dow .dow_ZS2 {
+    width: 16.25px;
+    height: 29.25px;
+    top: -14.95px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link {
+    top: 32.5px;
+    left: 104px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_icon1 {
+    width: 46.15px;
+    height: 55.9px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_icon2 {
+    width: 37.05px;
+    height: 40.95px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_icon3 {
+    width: 50.05px;
+    height: 54.6px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link-wkey {
+    width: 43.55px;
+    height: 11.7px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link-hkey {
+    width: 9.75px;
+    height: 31.85px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_kg {
+    width: 20.15px;
+    height: 18.2px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link-dc {
+    width: 37.7px;
+    height: 61.75px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_hr {
+    box-shadow: inset 0 0 1.95px 0.65px #3d8ec1;
+    height: 3.9px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_hr2 {
+    box-shadow: inset 0 0 1.95px 0.65px #3d8ec1;
+    width: 3.9px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_w1 {
+    width: 26px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_w2 {
+    width: 106.6px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_h1 {
+    height: 76.05px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_h2 {
+    height: 16.25px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link-wkeyBody .wkey2 {
+    bottom: -13px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg .bat2-link-kg_ul {
+    top: 9.75px;
+    left: 0;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg .bat2-link-kg_ul .bat2-link-kg_p {
+    font-size: 7.8px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg .bat2-link-kg_ul .bat2-link-kg_p span {
+    font-size: 7.8px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_dcBody {
+    left: 266.5px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_dcBody .bat2-link_liDc {
+    top: -9.75px;
+    right: -9.75px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_dcBody .bat2-link_liDc .bat2-link-dc .dc_text {
+    top: 10.4px;
+    left: 42.25px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_dcBody .bat2-link_liDc .bat2-link-dc .dc_text .dc-text_numb {
+    font-size: 6.5px;
+  }
+  .bat3_main .com_title {
+    padding: 23.8px 0 0 14px;
+  }
+  .bat3_main .bat3_left .com_title {
+    padding-left: 28px;
+  }
+  .bat3_main .bat3_mid .com_title {
+    padding-left: 42px;
+  }
+  .bat3_main .bat3_right .com-mid_title {
+    margin-top: 28px;
+  }
+  .PV_main .PV_left .PV-left_on .layui-form {
+    padding: 6px 36px;
+    padding-bottom: 3px;
+  }
+  .PV_main .PV_left .PV-left_on .PV-cardbox {
+    width: 259px;
+  }
+  .PV_main .PV_left .PV-left_on .PV-cardbox .row .layui-card .layui-card-header {
+    height: 24.5px;
+    line-height: 24.5px;
+    box-shadow: inset 0 0 5.6px 0 #4288b9;
+    font-size: 11.2px;
+  }
+  .PV_main .PV_left .PV-left_on .PV-cardbox .row .layui-card .layui-card-body {
+    font-size: 11.2px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .PV_main .PV_left .PV-left_und .PV_meter .PV-meter_li {
+    width: 21px;
+    height: 28px;
+    line-height: 28px;
+    margin: 14px 2.1px;
+    font-size: 17.5px;
+    box-shadow: inset 0 0 8.4px 0.7px #4288b9;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time {
+    margin: 12 78px;
+    padding: 0 30px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time_p {
+    font-size: 9px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time_bg {
+    margin: 9px 0;
+    font-size: 9px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time_bg .PV-time_num {
+    font-size: 9px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time_bg .PV-time_danwei {
+    font-size: 9px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time-w1 {
+    width: 36px;
+    height: 36px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time-w2 {
+    width: 58.8px;
+    height: 58.8px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time-w3 {
+    width: 63px;
+    height: 63px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time-w4 {
+    width: 49.2px;
+    height: 49.2px;
+  }
+  .PV_main .PV_right .PV-right_on .PV_time .PV-time_li .PV-time-w5 {
+    width: 64.2px;
+    height: 64.2px;
+  }
+  .PV_main .PV_right .PV-right_mid .PV_alarm {
+    padding: 0 36px;
+  }
+  .PV_main .PV_right .PV-right_mid .PV_alarm .PV-alarm_title {
+    font-size: 9px;
+    margin: 12px 0;
+  }
+  .PV_main .PV_right .PV-right_mid .PV_alarm .PV-alarm_dd {
+    font-size: 9px;
+    margin: 6px 0;
+  }
+  .PV_main .PV_right .PV-right_mid .PV_alarm .PV-alarm_dd .PV-alarm-dd_badge {
+    box-shadow: inset 0 0 7.2px 1px #4288b9;
+    font-size: 9.6px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 3px;
+  }
+}

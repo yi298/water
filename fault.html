@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>故障模拟</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/md.css">
+    <link rel="stylesheet" href="./css/lg.css">
+
+</head>
+
+<body style="background-image: url('./static/bg.jpg');">
+    <div class="header bg" style="background-image: url('./static/title.png');">
+        <div class="header_logo bg" style="background-image: url('static/logo.png');">
+            logo
+        </div>
+        <div class="header_right">
+            <div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
+            <div class="header-logout bg" style="background-image: url('/static/button.png');">
+                退出
+            </div>
+        </div>
+    </div>
+    <div class="com_main row fault_main">
+        <div class="col-lg-3">
+            <div class="on_row bg" style="background-image: url('./static/fault_lt.png');">
+                <div class="com_title"><span>&nbsp;&nbsp;</span>电池电压异常</div>
+                <div class="fault_cont">
+                    <p class="fault-cont_p abn">电池电压异常</p>
+                    <p class="fault-cont_p abn">电池温度异常</p>
+                </div>
+            </div>
+            <div class="und_row bg" style="background-image: url('./static/fault_lb.png');">
+                <h3 class="com_title"><span>&nbsp;&nbsp;</span>电池异常</h3>
+                <div class="fault_cont">
+                    <p class="fault-cont_p abn">电池异常</p>
+                    <p class="fault-cont_p abn">通讯异常</p>
+                    <p class="fault-cont_p abn">控制盒异常</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 bg" style="background-image: url('./static/fault_m.png');">
+            <div class="fault_biaoti bg" style="background-image: url('./static/fault_biaoti.png');"></div>
+            <h3 class="com_title pt"><span>&nbsp;&nbsp;</span>操作流程</h3>
+            <div class="fault_cont">
+                <div class="fault-cont_img bg" style="background-image: url('./static/fault_img.png');"></div>
+                <p class="fault-cont_p">开发中，敬请期待！</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="on_row bg" style="background-image: url('./static/fault_rt.png');">
+                <h3 class="com_title"><span>&nbsp;&nbsp;</span>光伏异常</h3>
+                <div class="fault_cont">
+                    <p class="fault-cont_p abn">光伏异常</p>
+                </div>
+            </div>
+            <div class="und_row bg" style="background-image: url('./static/fault_rb.png');">
+                <h3 class="com_title"><span>&nbsp;&nbsp;</span>PCS异常</h3>
+                <div class="fault_cont">
+                    <p class="fault-cont_p nor">暂无异常</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+<script src="./js/header.js"></script>
+
+</html>
