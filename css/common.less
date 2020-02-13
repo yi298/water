@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-size: 100% 100%;
+  -webkit-text-size-adjust:none
 }
 
 // 临时边框
@@ -103,10 +104,35 @@ body {
     height: 57px;
   }
 }
+// 警告信息
+.com_alarm {
+  padding: 0 60px;
+  .com-alarm_title {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .com-alarm_dd {
+    font-size: 15px;
+    margin: 10px 0;
+    .com-alarm-dd_badge {
+      box-shadow: inset 0 0 12px 1px #4288b9;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00ffff;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
+
 
 // layui
 .layui-form {
-
   .layui-form-item {
     margin: 0;
     font-size: 16px;
@@ -117,6 +143,8 @@ body {
       padding: 0;
       margin: 0;
       line-height: normal;
+      white-space: nowrap;
+      cursor: inherit;
     }
     .layui-input-inline {
       margin: 0;
@@ -221,7 +249,7 @@ body {
     .PV-left_on {
       height: 80%;
       min-height: 450px;
-      .layui-form{
+      .layui-form {
         padding: 10px 60px;
         padding-bottom: 5px;
       }
@@ -340,30 +368,7 @@ body {
     .PV-right_mid {
       height: 30%;
       min-height: 168px;
-      .PV_alarm {
-        padding: 0 60px;
-        .PV-alarm_title {
-          font-size: 15px;
-          margin: 20px 0;
-        }
-        .PV-alarm_dd {
-          font-size: 15px;
-          margin: 10px 0;
-          .PV-alarm-dd_badge {
-            box-shadow: inset 0 0 12px 1px #4288b9;
-            font-size: 16px;
-            font-weight: bold;
-            color: #00ffff;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 5px;
-          }
-        }
-      }
+      
     }
     .PV-right_und {
       height: 35%;
@@ -385,8 +390,60 @@ body {
       padding: 0;
       .on_row {
         height: 50%;
-        .layui-form{
-
+        position: relative;
+        .i_ri{
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          top: 30px;
+          right: 25px;
+        }
+        .layui-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 15px 32px;
+          .layui-form-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            .layui-form-label {
+              font-size: 14px;
+              flex-basis: 155px;
+            }
+            .input-null {
+              font-size: 14px;
+              flex-basis: 50px;
+              height: 15px;
+              line-height: 15px;
+            }
+            .layui-word-aux {
+              font-size: 14px;
+              flex-basis: 30px;
+              text-align: center;
+            }
+          }
+          .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &:nth-child(4) {
+              .layui-form-item {
+                .input-null {
+                  flex-basis: 70px;
+                }
+              }
+            }
+            &:last-child {
+              justify-content: center;
+              .layui-form-item{
+                justify-content: center;
+              }
+              .layui-form-label{
+                flex-basis: 90px;
+              }
+            }
+          }
         }
       }
     }
@@ -403,6 +460,25 @@ body {
           .bat2-mid_num {
             height: 35%;
           }
+
+          // 内容
+          .layui-form{
+            padding: 45px;
+            .layui-form-item{
+              display: flex;
+              .layui-form-label{
+                flex-basis: 100px;
+                text-align: right;
+                font-size: 16px;
+              }
+              .input-null{
+                font-size: 16px;
+              }
+              .layui-word-aux{
+                font-size: 16px;
+              }
+            }
+          }
         }
         .bat2-mid_right {
           .bat2-mid_echarts {
@@ -410,6 +486,27 @@ body {
           }
           .bat2-mid_echartsNum {
             height: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bat2-mid-echartsNum_ul{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 0 20px;
+              .echartsNum_li{
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              .red{
+                border-bottom: 3px solid red;
+                font-weight: 600;
+              }
+              .green{
+                border-bottom: 3px solid green;
+                font-weight: 600;
+              }
+            }
           }
         }
       }
@@ -438,9 +535,9 @@ body {
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 50px;
+        top: 45px;
         left: 160px;
-        height: 100%;
+        height: 80%;
         // icon宽高
         .bat2-link_icon1 {
           width: 71px;
@@ -546,7 +643,8 @@ body {
                 top: 16px;
                 left: 65px;
                 .dc-text_numb {
-                  font-size: 10px;
+                  height: 20px;
+                  font-size: 12px;
                 }
               }
             }
@@ -555,6 +653,7 @@ body {
       }
     }
   }
+  
 }
 
 // 故障模拟

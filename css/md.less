@@ -25,7 +25,7 @@
   .layui-form {
     .layui-form-item {
       font-size: 16px * 0.6;
-      margin: 15px * 0.6 0;
+      margin: 5px 0;
       .input-null {
         width: 130px * 0.6;
         margin: 0 10px * 0.6;
@@ -106,6 +106,34 @@
       height: 57px * 0.7;
     }
   }
+
+  // 警告信息
+.com_alarm {
+  padding: 0 60px*0.65;
+  .com-alarm_title {
+    font-size: 15px*0.65;
+    -webkit-transform : scale(0.65,0.65) ;
+    display: inline-block;
+    margin: 20px*0.65 0;
+  }
+  .com-alarm_dd {
+    font-size: 15px*0.65;
+    -webkit-transform : scale(0.65,0.65) ;
+    display: inline-block;
+    margin: 10px*0.65 0;
+    .com-alarm-dd_badge {
+      box-shadow: inset 0 0 12px*0.65 1px #4288b9;
+      font-size: 16px*0.65;
+      -webkit-transform : scale(0.65,0.65) ;
+      display: inline-block;
+      width: 25px*0.65;
+      height: 25px*0.65;
+      line-height: 25px*0.65;
+      margin-right: 5px*0.65;
+    }
+  }
+}
+
   // 故障模拟
   .fault_main {
     .fault_cont {
@@ -130,108 +158,92 @@
     .com_title {
       padding: 34px * 0.65 0 0 20px * 0.65;
     }
-    .bat2_dow {
-      .dow_ZS {
-        width: 25px * 0.65;
-        height: 45px * 0.65;
-        top: -23px * 0.65;
-      }
-      .dow_ZS2 {
-        width: 25px * 0.65;
-        height: 45px * 0.65;
-        top: -23px * 0.65;
-      }
-      .bat2-linkBody {
-        .bat2_link {
-          top: 50px * 0.65;
-          left: 160px * 0.65;
-          .bat2-link_icon1 {
-            width: 71px * 0.65;
-            height: 86px * 0.65;
-          }
-          .bat2-link_icon2 {
-            width: 57px * 0.65;
-            height: 63px * 0.65;
-          }
-          .bat2-link_icon3 {
-            width: 77px * 0.65;
-            height: 84px * 0.65;
-          }
-          // 开关宽高
-          .bat2-link-wkey {
-            width: 67px * 0.65;
-            height: 18px * 0.65;
-          }
-          .bat2-link-hkey {
-            width: 15px * 0.65;
-            height: 49px * 0.65;
-          }
-          // kg宽高
-          .bat2-link_kg {
-            width: 31px * 0.65;
+    .bat2_on {
+      .bat2-on_box {
+        .on_row {
+          .i_ri {
+            width: 28px * 0.65;
             height: 28px * 0.65;
+            top: 30px * 0.65;
+            right: 25px * 0.65;
           }
-          // 电池宽高
-          .bat2-link-dc {
-            width: 58px * 0.65;
-            height: 95px * 0.65;
-          }
-          // 横管道
-          .bat2-link_hr {
-            box-shadow: inset 0 0 3px * 0.65 1px * 0.65 #3d8ec1;
-            height: 6px * 0.65;
-          }
-          // 竖管道
-          .bat2-link_hr2 {
-            box-shadow: inset 0 0 3px * 0.65 1px * 0.65 #3d8ec1;
-            width: 6px * 0.65;
-          }
-          // 管道宽度{
-          .link_w1 {
-            // 短
-            width: 40px * 0.65;
-          }
-          .link_w2 {
-            // 长
-            width: 164px * 0.65;
-          }
-          .link_h1 {
-            height: 117px * 0.65;
-          }
-          .link_h2 {
-            height: 25px * 0.65;
-          }
-          .bat2-link_iconBody {
-            .bat2-link-wkeyBody {
-              .wkey2 {
-                bottom: -20px * 0.65;
+          .layui-form {
+            padding: 15px * 0.65 32px * 0.65;
+            .layui-form-item {
+              margin: 10px * 0.65 0;
+              .layui-form-label {
+                font-size: 14px * 0.65;
+                flex-basis: 155px * 0.65;
+              }
+              .input-null {
+                font-size: 14px * 0.65;
+                flex-basis: 50px * 0.65;
+                height: 15px * 0.65;
+                line-height: 15px * 0.65;
+              }
+              .layui-word-aux {
+                font-size: 14px * 0.65;
+                flex-basis: 30px * 0.65;
               }
             }
-            .bat2-link_kg {
-              .bat2-link-kg_ul {
-                top: 15px * 0.65;
-                left: 0;
-                .bat2-link-kg_p {
-                  font-size: 12px * 0.65;
-                  span {
-                    font-size: 12px * 0.65;
+            .row {
+              &:nth-child(4) {
+                .layui-form-item {
+                  .input-null {
+                    flex-basis: 70px * 0.65;
                   }
+                }
+              }
+              &:last-child {
+                .layui-form-label {
+                  flex-basis: 90px * 0.65;
                 }
               }
             }
           }
-          .bat2-link_dcBody {
-            left: 410px * 0.65;
-            .bat2-link_liDc {
-              top: -15px * 0.65;
-              right: -15px * 0.65;
-              .bat2-link-dc {
-                .dc_text {
-                  top: 16px * 0.65;
-                  left: 65px * 0.65;
-                  .dc-text_numb {
-                    font-size: 10px * 0.65;
-                  }
+        }
+      }
+      .bat2-on_mid {
+        .com-mid_cont {
+          .bat2-mid_left {
+            // 内容
+            .layui-form {
+              padding: 45px * 0.65;
+              .layui-form-item {
+                .layui-form-label {
+                  flex-basis: 100px * 0.65;
+                  -webkit-transform : scale(0.65,0.65) ;
+                  display: inline-block;
+                  font-size: 16px * 0.65;
+                }
+                .input-null{
+                  font-size: 16px * 0.65;
+                  -webkit-transform : scale(0.65,0.65) ;
+                  display: inline-block;
+                }
+                .layui-word-aux{
+                  display: inline-block;
+                  font-size: 16px * 0.65;
+                  -webkit-transform : scale(0.65,0.65) ;
+                }
+              }
+            }
+          }
+          .bat2-mid_right {
+            .bat2-mid_echartsNum {
+              .bat2-mid-echartsNum_ul{
+                margin: 0 20px*0.65;
+                .echartsNum_li{
+                  font-size: 16px*0.65;
+                  -webkit-transform : scale(0.65,0.65) ;
+                  display: inline-block;
+                  margin-bottom: 10px*0.65;
+                }
+                .red{
+                  border-bottom: 3px*0.65 solid red;
+                }
+                .green{
+                  border-bottom: 3px*0.65 solid green;
                 }
               }
             }
@@ -239,26 +251,116 @@
         }
       }
     }
-  }
-
-  // 电池堆2
-  .bat3_main {
-    .com_title {
-      padding: 34px * 0.7 0 0 20px * 0.7;
-    }
-    .bat3_left {
-      .com_title {
-        padding-left: 40px * 0.7;
+    .bat2_dow {
+      .dow_ZS {
+        width: 25px  * 0.65;
+        height: 45px  * 0.65;
+        top: -23px  * 0.65;
+        left: 0;
       }
-    }
-    .bat3_mid {
-      .com_title {
-        padding-left: 60px * 0.7;
+      .dow_ZS2 {
+        width: 25px  * 0.65;
+        height: 45px  * 0.65;
+        top: -23px  * 0.65;
+        right: 0;
       }
-    }
-    .bat3_right {
-      .com-mid_title {
-        margin-top: 40px * 0.7;
+      .bat2-linkBody {
+        .bat2_link {
+          top: 45px  * 0.65;
+          left: 160px  * 0.65;
+          .bat2-link_icon1 {
+            width: 71px  * 0.65;
+            height: 86px  * 0.65;
+          }
+          .bat2-link_icon2 {
+            width: 57px  * 0.65;
+            height: 63px  * 0.65;
+          }
+          .bat2-link_icon3 {
+            width: 77px  * 0.65;
+            height: 84px  * 0.65;
+          }
+          // 开关宽高
+          .bat2-link-wkey {
+            width: 67px  * 0.65;
+            height: 18px  * 0.65;
+          }
+          .bat2-link-hkey {
+            width: 15px  * 0.65;
+            height: 49px  * 0.65;
+          }
+          // kg宽高
+          .bat2-link_kg {
+            width: 31px  * 0.65;
+            height: 28px  * 0.65;
+          }
+          // 电池宽高
+          .bat2-link-dc {
+            width: 58px  * 0.65;
+            height: 95px  * 0.65;
+          }
+          // 横管道
+          .bat2-link_hr {
+            box-shadow: inset 0 0 3px  * 0.65 1px  * 0.65 #3d8ec1;
+            height: 6px  * 0.65;
+          }
+          // 竖管道
+          .bat2-link_hr2 {
+            box-shadow: inset 0 0 3px  * 0.65 1px  * 0.65 #3d8ec1;
+            width: 6px  * 0.65;
+          }
+          // 管道宽度{
+          .link_w1 {
+            // 短
+            width: 40px  * 0.65;
+          }
+          .link_w2 {
+            // 长
+            width: 164px  * 0.65;
+          }
+          .link_h1 {
+            height: 117px  * 0.65;
+          }
+          .link_h2 {
+            height: 25px  * 0.65;
+          }
+          .bat2-link_iconBody {
+            .bat2-link-wkeyBody {
+              .wkey2 {
+                bottom: -20px  * 0.65;
+              }
+            }
+            .bat2-link_kg {
+              .bat2-link-kg_ul {
+                top: 15px  * 0.65;
+                left: 0;
+                .bat2-link-kg_p {
+                  font-size: 12px  * 0.65;
+                  span {
+                    font-size: 12px  * 0.65;
+                  }
+                }
+              }
+            }
+          }
+          .bat2-link_dcBody {
+            left: 410px  * 0.65;
+            .bat2-link_liDc {
+              top: -15px  * 0.65;
+              right: -15px  * 0.65;
+              .bat2-link-dc {
+                .dc_text {
+                  top: 16px  * 0.65;
+                  left: 65px  * 0.65;
+                  .dc-text_numb {
+                    height: 20px  * 0.65;
+                    font-size: 12px  * 0.65;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

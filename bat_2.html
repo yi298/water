@@ -33,7 +33,7 @@
             <div class="bat2-on_box">
                 <div class="on_row bg" style="background-image: url('./static/bat2_left1.png');">
                     <div class="com_title"><span>&nbsp;&nbsp;</span>电池电压信息</div>
-                    <div class="layui-form" action="">
+                    <form class="layui-form" action="">
                         <div class="row">
                             <div class="layui-form-item col-lg-6">
                                 <label class="layui-form-label">最大单节电池电压簇号：</label>
@@ -82,16 +82,74 @@
                                 <div class="layui-form-mid layui-word-aux">mV</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">单节最大压差：</label>
-                        <div class="layui-input-inline input-null">50.0</div>
-                        <div class="layui-form-mid layui-word-aux">mV</div>
-                    </div>
+                        <div class="row">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">单节最大压差：</label>
+                                <div class="layui-input-inline input-null">50.0</div>
+                                <div class="layui-form-mid layui-word-aux">mV</div>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="on_row bg" style="background-image: url('./static/bat2_left2.png');">
                     <div class="com_title"><span>&nbsp;&nbsp;</span>电池温度信息</div>
+                    <form class="layui-form" action="">
+                        <div class="row">
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最大单节电池温度簇号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最小单节电池温度簇号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最大单节电池温度包号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最小单节电池温度包号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最大单节电池温度节号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最小单节电池温度节号：</label>
+                                <div class="layui-input-inline input-null">5</div>
+                                <div class="layui-form-mid layui-word-aux">No</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最大单节电池温度值：</label>
+                                <div class="layui-input-inline input-null">25.0</div>
+                                <div class="layui-form-mid layui-word-aux">℃</div>
+                            </div>
+                            <div class="layui-form-item col-lg-6">
+                                <label class="layui-form-label">最小单节电池温度值：</label>
+                                <div class="layui-input-inline input-null">25.0</div>
+                                <div class="layui-form-mid layui-word-aux">℃</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">单节最大温差：</label>
+                                <div class="layui-input-inline input-null">1.0</div>
+                                <div class="layui-form-mid layui-word-aux">℃</div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- 上中 -->
@@ -103,16 +161,70 @@
                 </div>
                 <div class="row com-mid_cont">
                     <div class="col-lg-6 bat2-mid_left">
-                        <div class="bat2-mid_form border"></div>
-                        <div class="bat2-mid_num border">
+                        <form class="bat2-mid_form layui-form" action="">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">电压：</label>
+                                <div class="layui-input-inline input-null">700.0</div>
+                                <div class="layui-form-mid layui-word-aux">V</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">电流：</label>
+                                <div class="layui-input-inline input-null">500.0</div>
+                                <div class="layui-form-mid layui-word-aux">A</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">功率：</label>
+                                <div class="layui-input-inline input-null">350.0</div>
+                                <div class="layui-form-mid layui-word-aux">KW</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">日充电量：</label>
+                                <div class="layui-input-inline input-null">1000.0</div>
+                                <div class="layui-form-mid layui-word-aux">kWh</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">日放电量：</label>
+                                <div class="layui-input-inline input-null">1000.0</div>
+                                <div class="layui-form-mid layui-word-aux">kWh</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">历史充电量：</label>
+                                <div class="layui-input-inline input-null">1000.0</div>
+                                <div class="layui-form-mid layui-word-aux">kWh</div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">历史放电量：</label>
+                                <div class="layui-input-inline input-null">1000.0</div>
+                                <div class="layui-form-mid layui-word-aux">kWh</div>
+                            </div>
+                        </form>
+                        <div class="bat2-mid_num">
                             <div class="com_title pt">
                                 <span>&nbsp;&nbsp;</span>储能站监控系统告警状况
                             </div>
+                            <dl class="com_alarm">
+                                <!-- <dt class="com-alarm_title">光伏电站监控系统告警情况：</dt> -->
+                                <dd class="com-alarm_dd">
+                                    <span class="com-alarm-dd_badge">1</span>告警信息：<span class="yellow">5</span>个
+                                </dd>
+                                <dd class="com-alarm_dd">
+                                    <span class="com-alarm-dd_badge">2</span>故障信息：<span class="red">4</span>个
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                     <div class="col-lg-6 bat2-mid_right">
                         <div class="bat2-mid_echarts border"></div>
-                        <div class="bat2-mid_echartsNum border"></div>
+                        <div class="bat2-mid_echartsNum border">
+                            <ul class="bat2-mid-echartsNum_ul">
+                                <li class="echartsNum_li">可充能量</li>
+                                <li class="echartsNum_li green ">1000.0 kWh</li>
+                            </ul>
+                            <ul class="bat2-mid-echartsNum_ul">
+                                <li class="echartsNum_li">可充能量</li>
+                                <li class="echartsNum_li red">1000.0 kWh</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,9 +232,11 @@
             <div class="bat2-on_box">
                 <div class="on_row bg" style="background-image: url('./static/bat2_right1.png');">
                     <div class="com_title"><span>&nbsp;&nbsp;</span>一周日充放电量</div>
+                    <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
                 </div>
                 <div class="on_row bg" style="background-image: url('./static/bat2_right2.png');">
                     <div class="com_title"><span>&nbsp;&nbsp;</span>历史实时功率</div>
+                    <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
                 </div>
             </div>
         </div>
