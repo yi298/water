@@ -24,12 +24,12 @@
   // layui
   .layui-form {
     .layui-form-item {
-      font-size: 16px * 0.6;
+      font-size: 16px * 0.65;
       margin: 5px 0;
       .input-null {
-        width: 130px * 0.6;
-        margin: 0 10px * 0.6;
-        box-shadow: inset 0 0 8px * 0.6 1px rgba(255, 255, 255, 0.4);
+        padding: 0 20px * 0.65;
+        margin: 0 10px * 0.65;
+        box-shadow: inset 0 0 8px * 0.65 1px rgba(255, 255, 255, 0.4);
       }
     }
   }
@@ -106,33 +106,50 @@
       height: 57px * 0.7;
     }
   }
-
-  // 警告信息
-.com_alarm {
-  padding: 0 60px*0.65;
-  .com-alarm_title {
-    font-size: 15px*0.65;
-    // -webkit-transform : scale(0.65,0.65) ;
-    // display: inline-block;
-    margin: 20px*0.65 0;
-  }
-  .com-alarm_dd {
-    font-size: 15px*0.65;
-    // -webkit-transform : scale(0.65,0.65) ;
-    // display: inline-block;
-    margin: 10px*0.65 0;
-    .com-alarm-dd_badge {
-      box-shadow: inset 0 0 12px*0.65 1px #4288b9;
-      font-size: 16px*0.65;
-      -webkit-transform : scale(0.65,0.65) ;
-      display: inline-block;
-      width: 25px*0.65;
-      height: 25px*0.65;
-      line-height: 25px*0.65;
-      margin-right: 5px*0.65;
+  .com_cardBox {
+    width: 370px * 0.7;
+    .row {
+      .layui-card {
+        .layui-card-header {
+          height: 35px * 0.7;
+          line-height: 35px * 0.7;
+          box-shadow: inset 0 0 8px * 0.7 0 #4288b9;
+          font-size: 16px * 0.7;
+        }
+        .layui-card-body {
+          font-size: 16px * 0.7;
+          height: 50px * 0.7;
+          line-height: 50px * 0.7;
+        }
+      }
     }
   }
-}
+  // 警告信息
+  .com_alarm {
+    padding: 0 60px * 0.65;
+    .com-alarm_title {
+      font-size: 15px * 0.65;
+      // -webkit-transform : scale(0.65,0.65) ;
+      // display: inline-block;
+      margin: 20px * 0.65 0;
+    }
+    .com-alarm_dd {
+      font-size: 15px * 0.65;
+      // -webkit-transform : scale(0.65,0.65) ;
+      // display: inline-block;
+      margin: 10px * 0.65 0;
+      .com-alarm-dd_badge {
+        box-shadow: inset 0 0 12px * 0.65 1px #4288b9;
+        font-size: 16px * 0.65;
+        -webkit-transform: scale(0.65, 0.65);
+        display: inline-block;
+        width: 25px * 0.65;
+        height: 25px * 0.65;
+        line-height: 25px * 0.65;
+        margin-right: 5px * 0.65;
+      }
+    }
+  }
 
   // 故障模拟
   .fault_main {
@@ -173,37 +190,15 @@
               margin: 10px * 0.65 0;
               .layui-form-label {
                 font-size: 14px * 0.65;
-                // -webkit-transform : scale(0.65) ;
-                    // display: inline-block;
-                flex-basis: 155px * 0.65;
               }
               .input-null {
                 font-size: 14px * 0.65;
-                flex-basis: 50px * 0.65;
-                // -webkit-transform : scale(0.65) ;
-                    // display: inline-block;
-                height: 15px * 0.65;
-                line-height: 15px * 0.65;
+                padding: 0 20px * 0.65;
+                margin: 0;
               }
               .layui-word-aux {
                 font-size: 14px * 0.65;
-                flex-basis: 30px * 0.65;
-                // -webkit-transform : scale(0.65) ;
-                    // display: inline-block;
-              }
-            }
-            .row {
-              &:nth-child(4) {
-                .layui-form-item {
-                  .input-null {
-                    flex-basis: 70px * 0.65;
-                  }
-                }
-              }
-              &:last-child {
-                .layui-form-label {
-                  flex-basis: 90px * 0.65;
-                }
+                margin-left: 0;
               }
             }
           }
@@ -223,12 +218,12 @@
                   // display: inline-block;
                   font-size: 16px * 0.65;
                 }
-                .input-null{
+                .input-null {
                   font-size: 16px * 0.65;
                   // -webkit-transform : scale(0.65,0.65) ;
                   // display: inline-block;
                 }
-                .layui-word-aux{
+                .layui-word-aux {
                   // display: inline-block;
                   font-size: 16px * 0.65;
                   // -webkit-transform : scale(0.65,0.65) ;
@@ -238,19 +233,17 @@
           }
           .bat2-mid_right {
             .bat2-mid_echartsNum {
-              .bat2-mid-echartsNum_ul{
-                margin: 0 20px*0.65;
-                .echartsNum_li{
-                  font-size: 16px*0.65;
-                  // -webkit-transform : scale(0.65,0.65) ;
-                  // display: inline-block;
-                  margin-bottom: 10px*0.65;
+              .bat2-mid-echartsNum_ul {
+                margin: 0 20px * 0.65;
+                .echartsNum_li {
+                  font-size: 16px * 0.65;
+                  margin-bottom: 10px * 0.65;
                 }
-                .red{
-                  border-bottom: 3px*0.65 solid red;
+                .red {
+                  border-bottom: 3px * 0.65 solid red;
                 }
-                .green{
-                  border-bottom: 3px*0.65 solid green;
+                .green {
+                  border-bottom: 3px * 0.65 solid green;
                 }
               }
             }
@@ -260,94 +253,94 @@
     }
     .bat2_dow {
       .dow_ZS {
-        width: 25px  * 0.65;
-        height: 45px  * 0.65;
-        top: -23px  * 0.65;
+        width: 25px * 0.65;
+        height: 45px * 0.65;
+        top: -23px * 0.65;
         left: 0;
       }
       .dow_ZS2 {
-        width: 25px  * 0.65;
-        height: 45px  * 0.65;
-        top: -23px  * 0.65;
+        width: 25px * 0.65;
+        height: 45px * 0.65;
+        top: -23px * 0.65;
         right: 0;
       }
       .bat2-linkBody {
         .bat2_link {
-          top: 45px  * 0.65;
-          left: 160px  * 0.65;
+          top: 45px * 0.65;
+          left: 160px * 0.65;
           .bat2-link_icon1 {
-            width: 71px  * 0.65;
-            height: 86px  * 0.65;
+            width: 71px * 0.65;
+            height: 86px * 0.65;
           }
           .bat2-link_icon2 {
-            width: 57px  * 0.65;
-            height: 63px  * 0.65;
+            width: 57px * 0.65;
+            height: 63px * 0.65;
           }
           .bat2-link_icon3 {
-            width: 77px  * 0.65;
-            height: 84px  * 0.65;
+            width: 77px * 0.65;
+            height: 84px * 0.65;
           }
           // 开关宽高
           .bat2-link-wkey {
-            width: 67px  * 0.65;
-            height: 18px  * 0.65;
+            width: 67px * 0.65;
+            height: 18px * 0.65;
           }
           .bat2-link-hkey {
-            width: 15px  * 0.65;
-            height: 49px  * 0.65;
+            width: 15px * 0.65;
+            height: 49px * 0.65;
           }
           // kg宽高
           .bat2-link_kg {
-            width: 31px  * 0.65;
-            height: 28px  * 0.65;
+            width: 31px * 0.65;
+            height: 28px * 0.65;
           }
           // 电池宽高
           .bat2-link-dc {
-            width: 58px  * 0.65;
-            height: 95px  * 0.65;
+            width: 58px * 0.65;
+            height: 95px * 0.65;
           }
           // 横管道
           .bat2-link_hr {
-            box-shadow: inset 0 0 3px  * 0.65 1px  * 0.65 #3d8ec1;
-            height: 6px  * 0.65;
+            box-shadow: inset 0 0 3px * 0.65 1px * 0.65 #3d8ec1;
+            height: 6px * 0.65;
           }
           // 竖管道
           .bat2-link_hr2 {
-            box-shadow: inset 0 0 3px  * 0.65 1px  * 0.65 #3d8ec1;
-            width: 6px  * 0.65;
+            box-shadow: inset 0 0 3px * 0.65 1px * 0.65 #3d8ec1;
+            width: 6px * 0.65;
           }
           // 管道宽度{
           .link_w1 {
             // 短
-            width: 40px  * 0.65;
+            width: 40px * 0.65;
           }
           .link_w2 {
             // 长
-            width: 164px  * 0.65;
+            width: 164px * 0.65;
           }
           .link_h1 {
-            height: 117px  * 0.65;
+            height: 117px * 0.65;
           }
           .link_h2 {
-            height: 25px  * 0.65;
+            height: 25px * 0.65;
           }
           .bat2-link_iconBody {
             .bat2-link-wkeyBody {
               .wkey2 {
-                bottom: -20px  * 0.65;
+                bottom: -20px * 0.65;
               }
             }
             .bat2-link_kg {
               .bat2-link-kg_ul {
-                top: 15px  * 0.65;
+                top: 15px * 0.65;
                 left: 0;
                 .bat2-link-kg_p {
-                  font-size: 12px  * 0.65;
-                  -webkit-transform : scale(0.65) ;
+                  font-size: 12px * 0.65;
+                  -webkit-transform: scale(0.65);
                   display: inline-block;
                   span {
-                    font-size: 12px  * 0.65;
-                    -webkit-transform : scale(0.65) ;
+                    font-size: 12px * 0.65;
+                    -webkit-transform: scale(0.65);
                     display: inline-block;
                   }
                 }
@@ -355,18 +348,18 @@
             }
           }
           .bat2-link_dcBody {
-            left: 410px  * 0.65;
+            left: 410px * 0.65;
             .bat2-link_liDc {
-              top: -15px  * 0.65;
-              right: -15px  * 0.65;
+              top: -15px * 0.65;
+              right: -15px * 0.65;
               .bat2-link-dc {
                 .dc_text {
                   top: 10.4px;
                   left: 25px;
                   .dc-text_numb {
-                    height: 20px  * 0.65;
-                    font-size: 12px  * 0.65;
-                    -webkit-transform : scale(0.65) ;
+                    height: 20px * 0.65;
+                    font-size: 12px * 0.65;
+                    -webkit-transform: scale(0.65);
                   }
                 }
               }
@@ -384,24 +377,6 @@
         .layui-form {
           padding: 10px * 0.6 60px * 0.6;
           padding-bottom: 5px * 0.6;
-        }
-        .PV-cardbox {
-          width: 370px * 0.7;
-          .row {
-            .layui-card {
-              .layui-card-header {
-                height: 35px * 0.7;
-                line-height: 35px * 0.7;
-                box-shadow: inset 0 0 8px * 0.7 0 #4288b9;
-                font-size: 16px * 0.7;
-              }
-              .layui-card-body {
-                font-size: 16px * 0.7;
-                height: 50px * 0.7;
-                line-height: 50px * 0.7;
-              }
-            }
-          }
         }
       }
       .PV-left_und {
@@ -477,6 +452,102 @@
               line-height: 20px * 0.7;
               margin-right: 5px * 0.6;
             }
+          }
+        }
+      }
+    }
+  }
+
+  // 电池堆3
+  .bat3_main {
+    .com_title {
+      padding: 34px * 0.65 0 0 20px * 0.65;
+    }
+    .bat3_left {
+      .com_title {
+        padding-left: 40px * 0.65;
+      }
+      .on_row{
+        .bat3-left_cd{
+          .bat3-left-cd_bg{
+            width: 114px * 0.65;
+            height: 183px * 0.65;
+          }
+          .bat3-left-cd_text{
+            font-size: 14px * 0.65;
+            margin-top: 10px * 0.65;
+          }
+        }
+      }
+      .und_row {
+        .bat3-left_img {
+          width: 254px * 0.65;
+          height: 517px * 0.65;
+        }
+      }
+    }
+    .bat3_mid {
+      .com_title {
+        padding-left: 60px * 0.65;
+      }
+      .bat3-mid_on {
+        margin: 20px * 0.65 0;
+        .bat3-mid_onform {
+          padding-left: 70px * 0.65;
+        }
+        .bat3-mid-onRight {
+          padding-top: 120px * 0.65;
+          .bat3_img {
+            width: 323px * 0.65;
+            height: 264px * 0.65;
+            top: -104px * 0.65;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+      .bat3-mid_card {
+        width: 600px * 0.65;
+        margin-top: 20px * 0.65;
+      }
+      .bat3-mid_num {
+        margin-top: 50px* 0.65;
+        .bat3-mid-num_ul {
+          margin: 0 20px * 0.65;
+          .num_li {
+            font-size: 18px * 0.65;
+            margin-bottom: 10px * 0.65;
+          }
+          .red {
+            border-bottom: 3px * 0.65 solid red;
+            font-size: 24px * 0.65;
+          }
+          .green {
+            border-bottom: 3px * 0.65 solid #00ff36;
+            font-size: 24px * 0.65;
+          }
+        }
+      }
+    }
+    .bat3_right {
+      .com-mid_title {
+        margin-top: 40px * 0.65;
+      }
+      .bat3-right_dcBox {
+        .bat3_cd {
+          margin:  0;
+          .bat3-dc_text {
+            margin: 0 20px * 0.65;
+            li {
+              font-size: 12px * 0.65;
+              line-height: 15px;
+              // -webkit-transform: scale(0.65);
+                    // display: inline-block;
+            }
+          }
+          .bat3-dc_bg {
+            width: 45px * 0.65;
+            height: 70px * 0.65;
           }
         }
       }

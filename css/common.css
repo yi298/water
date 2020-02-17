@@ -1,3 +1,6 @@
+html {
+  font-size: 12px;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -8,6 +11,14 @@ body {
 .border {
   padding: 0;
   border: 1px solid #024381;
+}
+.echart {
+  width: 100%;
+  height: 100%;
+}
+.echart_line {
+  width: 100%;
+  height: 80%;
 }
 .bg {
   width: 100%;
@@ -117,6 +128,36 @@ body {
   display: inline-block;
   margin-right: 5px;
 }
+.com_cardBox {
+  width: 370px;
+  margin: auto;
+}
+.com_cardBox .row .layui-card {
+  background: none;
+  border: 1px solid #5365a0;
+  margin: 0;
+  padding: 0;
+}
+.com_cardBox .row .layui-card .layui-card-header {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #ccc;
+  border: none;
+  box-shadow: inset 0 0 8px 0 #4288b9;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+.com_cardBox .row .layui-card .layui-card-body {
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #4bc5cf;
+  padding: 0;
+  margin: 0;
+}
 .layui-form .layui-form-item {
   margin: 0;
   font-size: 16px;
@@ -141,7 +182,7 @@ body {
   line-height: normal;
 }
 .layui-form .layui-form-item .input-null {
-  width: 130px;
+  padding: 0 20px;
   margin: 0 10px;
   text-align: center;
   box-shadow: inset 0 0 8px 1px rgba(255, 255, 255, 0.4);
@@ -225,36 +266,6 @@ body {
 .PV_main .PV_left .PV-left_on .layui-form {
   padding: 10px 60px;
   padding-bottom: 5px;
-}
-.PV_main .PV_left .PV-left_on .PV-cardbox {
-  width: 370px;
-  margin: auto;
-}
-.PV_main .PV_left .PV-left_on .PV-cardbox .row .layui-card {
-  background: none;
-  border: 1px solid #5365a0;
-  margin: 0;
-  padding: 0;
-}
-.PV_main .PV_left .PV-left_on .PV-cardbox .row .layui-card .layui-card-header {
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  color: #ccc;
-  border: none;
-  box-shadow: inset 0 0 8px 0 #4288b9;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-}
-.PV_main .PV_left .PV-left_on .PV-cardbox .row .layui-card .layui-card-body {
-  font-size: 16px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #4bc5cf;
-  padding: 0;
-  margin: 0;
 }
 .PV_main .PV_left .PV-left_und {
   height: 20%;
@@ -375,17 +386,13 @@ body {
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .layui-form-item .layui-form-label {
   font-size: 14px;
-  flex-basis: 155px;
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .layui-form-item .input-null {
   font-size: 14px;
-  flex-basis: 50px;
-  height: 15px;
-  line-height: 15px;
+  padding: 0 20px;
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .layui-form-item .layui-word-aux {
   font-size: 14px;
-  flex-basis: 30px;
   text-align: center;
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .row {
@@ -393,17 +400,11 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-.bat2_main .bat2_on .bat2-on_box .on_row .layui-form .row:nth-child(4) .layui-form-item .input-null {
-  flex-basis: 70px;
-}
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .row:last-child {
   justify-content: center;
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form .row:last-child .layui-form-item {
   justify-content: center;
-}
-.bat2_main .bat2_on .bat2-on_box .on_row .layui-form .row:last-child .layui-form-label {
-  flex-basis: 90px;
 }
 .bat2_main .bat2_on .bat2-on_mid {
   width: 40%;
@@ -442,7 +443,7 @@ body {
 .bat2_main .bat2_on .bat2-on_mid .com-mid_cont .bat2-mid_right .bat2-mid_echartsNum {
   height: 35%;
   display: flex;
-  align-items: center;
+  padding-top: 10%;
   justify-content: center;
 }
 .bat2_main .bat2_on .bat2-on_mid .com-mid_cont .bat2-mid_right .bat2-mid_echartsNum .bat2-mid-echartsNum_ul {
@@ -633,12 +634,112 @@ body {
 .bat3_main .und_row {
   height: 65%;
 }
+.bat3_main .bat3_left {
+  width: 30%;
+}
 .bat3_main .bat3_left .com_title {
   padding-left: 40px;
+}
+.bat3_main .bat3_left .on_row .bat3-left_cd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bat3_main .bat3_left .on_row .bat3-left_cd .bat3-left-cd_bg {
+  width: 114px;
+  height: 183px;
+}
+.bat3_main .bat3_left .on_row .bat3-left_cd .bat3-left-cd_text {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.bat3_main .bat3_left .und_row .bat3-left_img {
+  width: 254px;
+  height: 517px;
+  margin: auto;
+}
+.bat3_main .bat3_mid {
+  width: 40%;
 }
 .bat3_main .bat3_mid .com_title {
   padding-left: 60px;
 }
+.bat3_main .bat3_mid .bat3-mid_on {
+  margin: 20px 0;
+}
+.bat3_main .bat3_mid .bat3-mid_on .layui-form-item {
+  display: flex;
+}
+.bat3_main .bat3_mid .bat3-mid_on .bat3-mid_onform {
+  padding-left: 70px;
+}
+.bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight {
+  position: relative;
+  padding-top: 120px;
+}
+.bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight .bat3_img {
+  width: 323px;
+  height: 264px;
+  position: absolute;
+  top: -104px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.bat3_main .bat3_mid .bat3-mid_card {
+  width: 600px;
+  margin-top: 20px;
+}
+.bat3_main .bat3_mid .bat3-mid_num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .num_li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .red {
+  border-bottom: 3px solid red;
+  font-weight: 600;
+  font-size: 24px;
+}
+.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .green {
+  border-bottom: 3px solid #00ff36;
+  font-weight: 600;
+  font-size: 24px;
+}
+.bat3_main .bat3_right {
+  width: 30%;
+}
 .bat3_main .bat3_right .com-mid_title {
   margin-top: 40px;
+}
+.bat3_main .bat3_right .bat3-right_dcBox {
+  display: flex;
+  justify-content: space-around;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3_cd {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text {
+  margin: 0 20px;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text li {
+  font-size: 12px;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_bg {
+  width: 45px;
+  height: 70px;
 }

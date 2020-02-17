@@ -27,7 +27,7 @@
       font-size: 16px * 2;
       margin: 15px * 2 0;
       .input-null {
-        width: 130px * 2;
+        padding: 0 20px * 2;
         margin: 0 10px * 2;
         box-shadow: inset 0 0 8px * 2 1px rgba(255, 255, 255, 0.4);
       }
@@ -91,7 +91,7 @@
       margin-right: 8px * 2;
     }
   }
-  
+
   .com-mid_title {
     margin: 20px * 2 0 10px * 2 0;
     .com-mid_text {
@@ -107,26 +107,46 @@
       height: 57px * 2;
     }
   }
-    // 警告信息
-.com_alarm {
-  padding: 0 60px*2;
-  .com-alarm_title {
-    font-size: 15px*2;
-    margin: 20px*2 0;
-  }
-  .com-alarm_dd {
-    font-size: 15px*2;
-    margin: 10px*2 0;
-    .com-alarm-dd_badge {
-      box-shadow: inset 0 0 12px*2 1px*2 #4288b9;
-      font-size: 16px*2;
-      width: 25px*2;
-      height: 25px*2;
-      line-height: 25px*2;
-      margin-right: 5px*2;
+
+  .com_cardBox {
+    width: 370px * 2;
+    .row {
+      .layui-card {
+        .layui-card-header {
+          height: 35px * 2;
+          line-height: 35px * 2;
+          box-shadow: inset 0 0 8px * 2 0 #4288b9;
+          font-size: 16px * 2;
+        }
+        .layui-card-body {
+          font-size: 16px * 2;
+          height: 50px * 2;
+          line-height: 50px * 2;
+        }
+      }
     }
   }
-}
+
+  // 警告信息
+  .com_alarm {
+    padding: 0 60px * 2;
+    .com-alarm_title {
+      font-size: 15px * 2;
+      margin: 20px * 2 0;
+    }
+    .com-alarm_dd {
+      font-size: 15px * 2;
+      margin: 10px * 2 0;
+      .com-alarm-dd_badge {
+        box-shadow: inset 0 0 12px * 2 1px * 2 #4288b9;
+        font-size: 16px * 2;
+        width: 25px * 2;
+        height: 25px * 2;
+        line-height: 25px * 2;
+        margin-right: 5px * 2;
+      }
+    }
+  }
 
   // 电池堆2
   .bat2_main {
@@ -136,12 +156,12 @@
     .bat2_on {
       .bat2-on_box {
         .on_row {
-          .i_ri{
-            width: 28px*2;
-            height: 28px*2;
+          .i_ri {
+            width: 28px * 2;
+            height: 28px * 2;
             position: absolute;
-            top: 30px*2;
-            right: 25px*2;
+            top: 30px * 2;
+            right: 25px * 2;
           }
           .layui-form {
             padding: 15px * 2 32px * 2;
@@ -149,31 +169,13 @@
               margin: 10px * 2 0;
               .layui-form-label {
                 font-size: 14px * 2;
-                flex-basis: 155px * 2;
               }
               .input-null {
                 font-size: 14px * 2;
-                flex-basis: 50px * 2;
-                height: 15px * 2;
-                line-height: 15px * 2;
+                padding: 0 20px * 2;
               }
               .layui-word-aux {
                 font-size: 14px * 2;
-                flex-basis: 30px * 2;
-              }
-            }
-            .row {
-              &:nth-child(4) {
-                .layui-form-item {
-                  .input-null {
-                    flex-basis: 70px * 2;
-                  }
-                }
-              }
-              &:last-child {
-                .layui-form-label {
-                  flex-basis: 90px * 2;
-                }
               }
             }
           }
@@ -183,35 +185,35 @@
         .com-mid_cont {
           .bat2-mid_left {
             // 内容
-            .layui-form{
-              padding: 45px* 2;
-              .layui-form-item{
-                .layui-form-label{
-                  flex-basis: 100px* 2;
-                  font-size: 16px* 2;
+            .layui-form {
+              padding: 45px * 2;
+              .layui-form-item {
+                .layui-form-label {
+                  flex-basis: 100px * 2;
+                  font-size: 16px * 2;
                 }
-                .input-null{
-                  font-size: 16px* 2;
+                .input-null {
+                  font-size: 16px * 2;
                 }
-                .layui-word-aux{
-                  font-size: 16px* 2;
+                .layui-word-aux {
+                  font-size: 16px * 2;
                 }
               }
             }
           }
           .bat2-mid_right {
             .bat2-mid_echartsNum {
-              .bat2-mid-echartsNum_ul{
-                margin: 0 20px*2;
-                .echartsNum_li{
-                  font-size: 16px*2;
-                  margin-bottom: 10px*2;
+              .bat2-mid-echartsNum_ul {
+                margin: 0 20px * 2;
+                .echartsNum_li {
+                  font-size: 16px * 2;
+                  margin-bottom: 10px * 2;
                 }
-                .red{
-                  border-bottom: 3px*2 solid red;
+                .red {
+                  border-bottom: 3px * 2 solid red;
                 }
-                .green{
-                  border-bottom: 3px*2 solid green;
+                .green {
+                  border-bottom: 3px * 2 solid green;
                 }
               }
             }
@@ -321,7 +323,7 @@
                   top: 16px * 2;
                   left: 65px * 2;
                   .dc-text_numb {
-                    height: 20px*2;
+                    height: 20px * 2;
                     font-size: 12px * 2;
                   }
                 }
@@ -340,24 +342,6 @@
         .layui-form {
           padding: 10px * 2 60px * 2;
           padding-bottom: 5px * 2;
-        }
-        .PV-cardbox {
-          width: 370px * 2;
-          .row {
-            .layui-card {
-              .layui-card-header {
-                height: 35px * 2;
-                line-height: 35px * 2;
-                box-shadow: inset 0 0 8px * 2 0 #4288b9;
-                font-size: 16px * 2;
-              }
-              .layui-card-body {
-                font-size: 16px * 2;
-                height: 50px * 2;
-                line-height: 50px * 2;
-              }
-            }
-          }
         }
       }
       .PV-left_und {
@@ -433,6 +417,99 @@
               line-height: 20px * 2;
               margin-right: 5px * 2;
             }
+          }
+        }
+      }
+    }
+  }
+
+  // 电池堆3
+  .bat3_main {
+    .com_title {
+      padding: 34px * 2 0 0 20px * 2;
+    }
+    .bat3_left {
+      .com_title {
+        padding-left: 40px * 2;
+      }
+      .on_row{
+        .bat3-left_cd{
+          .bat3-left-cd_bg{
+            width: 114px * 2;
+            height: 183px * 2;
+          }
+          .bat3-left-cd_text{
+            font-size: 14px * 2;
+            margin-top: 10px * 2;
+          }
+        }
+      }
+      .und_row {
+        .bat3-left_img {
+          width: 254px * 2;
+          height: 517px * 2;
+        }
+      }
+    }
+    .bat3_mid {
+      .com_title {
+        padding-left: 60px * 2;
+      }
+      .bat3-mid_on {
+        margin: 20px * 2 0;
+        .bat3-mid_onform {
+          padding-left: 70px * 2;
+        }
+        .bat3-mid-onRight {
+          padding-top: 120px * 2;
+          .bat3_img {
+            width: 323px * 2;
+            height: 264px * 2;
+            top: -104px * 2;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+      .bat3-mid_card {
+        width: 600px * 2;
+        margin-top: 20px * 2;
+      }
+      .bat3-mid_num {
+        margin-top: 50px*2;
+        .bat3-mid-num_ul {
+          margin: 0 20px * 2;
+          .num_li {
+            font-size: 18px * 2;
+            margin-bottom: 10px * 2;
+          }
+          .red {
+            border-bottom: 3px * 2 solid red;
+            font-size: 24px * 2;
+          }
+          .green {
+            border-bottom: 3px * 2 solid #00ff36;
+            font-size: 24px * 2;
+          }
+        }
+      }
+    }
+    .bat3_right {
+      .com-mid_title {
+        margin-top: 40px * 2;
+      }
+      .bat3-right_dcBox {
+        .bat3_cd {
+          margin: 25px * 2 0;
+          .bat3-dc_text {
+            margin: 0 20px * 2;
+            li {
+              font-size: 12px * 2;
+            }
+          }
+          .bat3-dc_bg {
+            width: 45px * 2;
+            height: 70px * 2;
           }
         }
       }

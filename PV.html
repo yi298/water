@@ -72,7 +72,7 @@
                         <div class="layui-input-inline input-text">上海区政府</div>
                     </div>
                 </form>
-                <div class="PV-cardbox">
+                <div class="com_cardBox">
                     <div class="row">
                         <div class="layui-card col-lg-6">
                             <div class="layui-card-header">辐照</div>
@@ -172,10 +172,12 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="com_title pt"><span>&nbsp;&nbsp;</span>发电量</div>
+                    <div id="PV_line" class="echart">折线图</div>
                 </div>
             </div>
             <div class="PV-right_und">
                 <div class="com_title pt"><span>&nbsp;&nbsp;</span>发电统计</div>
+                <div id="PV_line2" class="echart_line">折线图</div>
             </div>
         </div>
     </div>
@@ -183,6 +185,181 @@
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
 <script src="./layui/layui.all.js"></script>
-<script src="./js/header.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script>
+    // PV 柱状图
+    PV_line = echarts.init(document.getElementById("PV_line"));
+    PV_line.setOption({
+        color: ["#00ffff"],
+        // legend: {
+        //     top: "5%",
+        //     right: '10%',
+        //     textStyle: {
+        //         color: "#768ea3"
+        //     }
+        // },
+        tooltip: {},
+        grid: {
+            top: "20%",
+            left: "10%",
+            right: "10%",
+            bottom: "10%",
+            containLabel: true
+        },
+        dataset: {
+            source: [
+                ["日期", "发电"],
+                ["8/21", 45],
+                ["8/28", 60],
+                ["9/4", 90],
+                ["9/11", 40],
+                ["9/18", 100],
+                ["9/25", 80],
+                ["10/1", 70],
+                ["10/8", 55],
+                ["10/15", 85],
+                ["10/22", 60]
+            ]
+        },
+        xAxis: {
+            type: "category",
+            axisLine: {
+                lineStyle: {
+                    type: "solid",
+                    color: "#768ea3", //轴线的颜色
+                    width: "1" //坐标线的宽度
+                }
+            },
+            boundaryGap: true, // 间隔
+            axisTick: {
+                alignWithLabel: true
+            },
+        },
+        yAxis: {
+            name: "( kWh )",
+            axisLine: {
+                lineStyle: {
+                    type: "solid",
+                    color: "#768ea3", //轴线的颜色
+                    width: "1" //坐标线的宽度
+                }
+            },
+            splitLine: {
+                // 分隔线
+                show: true,
+                lineStyle: {
+                    color: ["#5864a1"]
+                }
+            }
+        },
+        series: [{
+            type: "bar",
+            barWidth: 30
+        }]
+    });
+    PV_line.resize();
+
+    // bat_2 折线图
+    PV_line2 = echarts.init(document.getElementById("PV_line2"));
+    PV_line2.setOption({
+        color: ["#FF4DCB", "#2BFAFF"], //蓝色、紫色
+        tooltip: {
+            trigger: "axis",
+            axisPointer: {
+                type: "cross",
+                label: {
+                    backgroundColor: "#6a7985"
+                }
+            },
+        },
+        legend: {
+            right: '5%',
+            data: ['2018', '2019'],
+            textStyle: {
+                color: ["#FF4DCB", "#2BFAFF"]
+            }
+        },
+        grid: {
+            top: "20%",
+            left: "5%",
+            right: "5%",
+            bottom: "5%",
+            containLabel: true
+        },
+        xAxis: [{
+            // name: "2019",
+            type: "category",
+            boundaryGap: true, // 间隔
+            axisTick: {
+                alignWithLabel: true
+            },
+            axisLine: {
+                lineStyle: {
+                    type: "solid",
+                    color: "#5864a1", //轴线的颜色
+                    width: "1" //坐标线的宽度
+                }
+            },
+        }],
+        yAxis: [{
+            name: "( kwh )",
+            type: "value",
+            min: 0,
+            max: 120,
+            splitNumber: 7,
+            axisLine: {
+                lineStyle: {
+                    type: "solid",
+                    color: "#5864a1", //轴线的颜色
+                    width: "0" //坐标线的宽度
+                }
+            },
+            splitLine: {
+                // 分隔线
+                show: true,
+                lineStyle: {
+                    color: ["#252a7d"]
+                }
+            }
+        }],
+        dataset: {
+            source: [
+                ["月份", "2018", "2019"],
+                ["一月", 45, 30],
+                ["二月", 40, 70],
+                ["三月", 110, 75],
+                ["四月", 85, 65],
+                ["五月", 45, 25],
+                ["六月", 55, 55],
+                ["七月", 20, 80],
+                ["八月", 100, 40],
+                ["九月", 20, 80],
+                ["十月", 85, 65],
+                ["十一月", 20, 40],
+                ["十二月", 45, 65],
+            ]
+        },
+        series: [{
+            name: "2018",
+            type: "line",
+            // stack: "总量",
+            symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
+            symbolSize: 5, //圆点大小
+            lineStyle: {
+                width: 1
+            }
+        }, {
+            name: "2019",
+            type: "line",
+            // stack: "总量",
+            symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
+            symbolSize: 5, //圆点大小
+            lineStyle: {
+                width: 1
+            }
+        }]
+    });
+    PV_line2.resize();
+</script>
 
 </html>

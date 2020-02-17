@@ -1,15 +1,27 @@
+html{
+  font-size: 12px;
+}
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-size: 100% 100%;
-  -webkit-text-size-adjust:none
+  -webkit-text-size-adjust: none;
 }
 
 // 临时边框
 .border {
   padding: 0;
   border: 1px solid #024381;
+}
+
+.echart {
+  width: 100%;
+  height: 100%;
+}
+.echart_line{
+  width: 100%;
+  height: 80%;
 }
 
 // 共用背景样式
@@ -129,7 +141,40 @@ body {
     }
   }
 }
-
+// 共用卡片
+.com_cardBox {
+  width: 370px;
+  margin: auto;
+  .row {
+    .layui-card {
+      background: none;
+      border: 1px solid #5365a0;
+      margin: 0;
+      padding: 0;
+      .layui-card-header {
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #ccc;
+        border: none;
+        box-shadow: inset 0 0 8px 0 #4288b9;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+      }
+      .layui-card-body {
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        text-align: center;
+        color: #4bc5cf;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
 
 // layui
 .layui-form {
@@ -156,7 +201,7 @@ body {
       line-height: normal;
     }
     .input-null {
-      width: 130px;
+      padding: 0 20px;
       margin: 0 10px;
       // height: 22px;
       text-align: center;
@@ -253,39 +298,6 @@ body {
         padding: 10px 60px;
         padding-bottom: 5px;
       }
-      .PV-cardbox {
-        width: 370px;
-        margin: auto;
-        .row {
-          .layui-card {
-            background: none;
-            border: 1px solid #5365a0;
-            margin: 0;
-            padding: 0;
-            .layui-card-header {
-              height: 35px;
-              line-height: 35px;
-              text-align: center;
-              color: #ccc;
-              border: none;
-              box-shadow: inset 0 0 8px 0 #4288b9;
-              padding: 0;
-              margin: 0;
-              font-size: 16px;
-            }
-            .layui-card-body {
-              font-size: 16px;
-              height: 50px;
-              line-height: 50px;
-              margin: 0;
-              text-align: center;
-              color: #4bc5cf;
-              padding: 0;
-              margin: 0;
-            }
-          }
-        }
-      }
     }
     .PV-left_und {
       height: 20%;
@@ -368,7 +380,6 @@ body {
     .PV-right_mid {
       height: 30%;
       min-height: 168px;
-      
     }
     .PV-right_und {
       height: 35%;
@@ -391,7 +402,7 @@ body {
       .on_row {
         height: 50%;
         position: relative;
-        .i_ri{
+        .i_ri {
           width: 28px;
           height: 28px;
           position: absolute;
@@ -409,17 +420,14 @@ body {
             margin: 10px 0;
             .layui-form-label {
               font-size: 14px;
-              flex-basis: 155px;
+              // flex-basis: 155px;
             }
             .input-null {
               font-size: 14px;
-              flex-basis: 50px;
-              height: 15px;
-              line-height: 15px;
+              padding: 0 20px;
             }
             .layui-word-aux {
               font-size: 14px;
-              flex-basis: 30px;
               text-align: center;
             }
           }
@@ -427,20 +435,10 @@ body {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            &:nth-child(4) {
-              .layui-form-item {
-                .input-null {
-                  flex-basis: 70px;
-                }
-              }
-            }
             &:last-child {
               justify-content: center;
-              .layui-form-item{
+              .layui-form-item {
                 justify-content: center;
-              }
-              .layui-form-label{
-                flex-basis: 90px;
               }
             }
           }
@@ -462,19 +460,19 @@ body {
           }
 
           // 内容
-          .layui-form{
+          .layui-form {
             padding: 45px;
-            .layui-form-item{
+            .layui-form-item {
               display: flex;
-              .layui-form-label{
+              .layui-form-label {
                 flex-basis: 100px;
                 text-align: right;
                 font-size: 16px;
               }
-              .input-null{
+              .input-null {
                 font-size: 16px;
               }
-              .layui-word-aux{
+              .layui-word-aux {
                 font-size: 16px;
               }
             }
@@ -487,22 +485,22 @@ body {
           .bat2-mid_echartsNum {
             height: 35%;
             display: flex;
-            align-items: center;
+            padding-top: 10%;
             justify-content: center;
-            .bat2-mid-echartsNum_ul{
+            .bat2-mid-echartsNum_ul {
               display: flex;
               flex-direction: column;
               align-items: center;
               margin: 0 20px;
-              .echartsNum_li{
+              .echartsNum_li {
                 font-size: 16px;
                 margin-bottom: 10px;
               }
-              .red{
+              .red {
                 border-bottom: 3px solid red;
                 font-weight: 600;
               }
-              .green{
+              .green {
                 border-bottom: 3px solid green;
                 font-weight: 600;
               }
@@ -653,7 +651,6 @@ body {
       }
     }
   }
-  
 }
 
 // 故障模拟
@@ -704,18 +701,117 @@ body {
   }
 
   .bat3_left {
+    width: 30%;
     .com_title {
       padding-left: 40px;
     }
+    .on_row{
+      .bat3-left_cd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .bat3-left-cd_bg{
+          width: 114px;
+          height: 183px;
+        }
+        .bat3-left-cd_text{
+          font-size: 14px;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+    .und_row {
+      .bat3-left_img {
+        width: 254px;
+        height: 517px;
+        margin: auto;
+      }
+    }
   }
   .bat3_mid {
+    width: 40%;
     .com_title {
       padding-left: 60px;
     }
+    .bat3-mid_on {
+      margin: 20px 0;
+      .layui-form-item {
+        display: flex;
+      }
+      .bat3-mid_onform {
+        padding-left: 70px;
+      }
+      .bat3-mid-onRight {
+        position: relative;
+        padding-top: 120px;
+        .bat3_img {
+          width: 323px;
+          height: 264px;
+          position: absolute;
+          top: -104px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+    .bat3-mid_card {
+      width: 600px;
+      margin-top: 20px;
+    }
+    .bat3-mid_num {
+      // height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      .bat3-mid-num_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        .num_li {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .red {
+          border-bottom: 3px solid red;
+          font-weight: 600;
+          font-size: 24px;
+        }
+        .green {
+          border-bottom: 3px solid #00ff36;
+          font-weight: 600;
+          font-size: 24px;
+        }
+      }
+    }
   }
   .bat3_right {
+    width: 30%;
     .com-mid_title {
       margin-top: 40px;
+    }
+    .bat3-right_dcBox {
+      display: flex;
+      justify-content: space-around;
+      .bat3_cd {
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+        .bat3-dc_text {
+          margin: 0 20px;
+          li{
+            font-size: 12px;
+          }
+        }
+        .bat3-dc_bg {
+          width: 45px;
+          height: 70px;
+        }
+      }
     }
   }
 }
