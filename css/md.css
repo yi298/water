@@ -1,4 +1,7 @@
 @media screen and (max-width: 1366px) {
+  body {
+    min-width: 1280px;
+  }
   .header {
     height: 74.9px;
   }

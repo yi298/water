@@ -402,13 +402,14 @@
 <!-- <script src="./js/zk_liudong.js"></script>
 <script src="./js/liudong.js"></script> -->
 <script>
-    // function fontSize(res) {
-    //     let docEl = document.documentElement,
-    //         clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    //     if (!clientWidth) return;
-    //     let fontSize = 100 * (clientWidth / 1920);
-    //     return res * fontSize;
-    // }
+    //当前视口宽度
+    let nowClientWidth = document.documentElement.clientWidth;
+
+    //  换算方法
+    function nowSize(val, initWidth = 1920) {
+        return val * (nowClientWidth / initWidth);
+    }
+
     // bat_2 饼状图
     bat2_pie1 = echarts.init(document.getElementById("bat2_pie1"));
     bat2_pie1.setOption({
@@ -417,7 +418,8 @@
             trigger: "item",
             formatter: "{a} <br/>{b} : {c} ({d}%)",
             textStyle: {
-                fontSize: 14,
+                fontSize: nowSize(14),
+                // fontSize: fontSize(0.12),
             }
         },
         legend: {
@@ -428,7 +430,11 @@
             textStyle: {
                 color: "#fff",
                 // fontSize: fontSize(0.16),
-            }
+                fontSize: nowSize(14),
+            },
+            itemWidth: nowSize(10),
+            itemHeight: nowSize(10),
+            itemGap: nowSize(12)
         },
         series: [{
             name: "电量",
@@ -436,7 +442,13 @@
             radius: "55%",
             center: ["50%", "60%"],
             label: {
-                color: "#fff"
+                textStyle: {
+                    color: "#fff",
+                    fontSize: nowSize(14)
+                },
+                lineStyle: {
+                    width: nowSize(1)
+                }
             },
             // startAngle: -20,  // 起始角度
             data: [{
@@ -448,7 +460,7 @@
             }],
             emphasis: {
                 itemStyle: {
-                    shadowBlur: 10,
+                    shadowBlur: nowSize(10),
                     shadowOffsetX: 0,
                     shadowColor: "rgba(0, 0, 0, 0.5)"
                 }
@@ -466,8 +478,11 @@
             right: '10%',
             textStyle: {
                 color: "#768ea3",
-                fontSize: '100%',
-            }
+                fontSize: nowSize(14),
+            },
+            itemWidth: nowSize(10),
+            itemHeight: nowSize(10),
+            itemGap: nowSize(12)
         },
         tooltip: {},
         grid: {
@@ -489,45 +504,58 @@
                 ["周日", 80, 85]
             ]
         },
-        xAxis: {
+        xAxis: [{
             type: "category",
             axisLine: {
                 lineStyle: {
                     type: "solid",
                     color: "#768ea3", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
+                },
+                textStyle: {
+                    fontSize: nowSize(20),
                 }
             },
-            textStyle: {
-                fontSize: '100%',
-            }
-        },
-        yAxis: {
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: "#a1d8f1",
+                    fontSize: nowSize(14)
+                }
+            },
+        }],
+
+        yAxis: [{
             name: "( kWh )",
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#768ea3", //轴线的颜色
-                    width: "1" //坐标线的宽度
-                }
+            type: 'value',
+            axisTick: {
+                show: false,
             },
-            splitLine: {
-                // 分隔线
+            axisLine: {
                 show: true,
                 lineStyle: {
-                    color: ["#5864a1"]
-                }
+                    color: "#45647f",
+                    width: nowSize(1),
+                    type: "solid"
+                },
             },
-            textStyle: {
-                // fontSize: fontSize(0.16),
+            splitLine: {
+                show: false
+            },
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: '#a1d8f1',
+                    fontSize: nowSize(14)
+                }
             }
-        },
+        }],
         series: [{
             type: "bar",
-            barWidth: 15
+            barWidth: nowSize(15)
         }, {
             type: "bar",
-            barWidth: 15
+            barWidth: nowSize(15)
         }]
     });
     bat2_line.resize();
@@ -543,6 +571,9 @@
                 label: {
                     backgroundColor: "#6a7985"
                 }
+            },
+            textStyle: {
+                fontSize: nowSize(14),
             }
             // 自定义单位
             // formatter: function (params) {
@@ -582,13 +613,19 @@
                 lineStyle: {
                     type: "solid",
                     color: "#5864a1", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
                 },
                 onZero: false
             },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14),
+                }
+            },
             axisTick: {
                 alignWithLabel: true
-            }
+            },
+
         }],
         yAxis: [{
             name: "( KW )",
@@ -600,14 +637,20 @@
                 lineStyle: {
                     type: "solid",
                     color: "#5864a1", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
                 }
+            },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14),
+                },
             },
             splitLine: {
                 // 分隔线
                 show: false,
                 lineStyle: {
-                    color: ["#5864a1"]
+                    color: ["#5864a1"],
+                    width: nowSize(1)
                 }
             },
             scale: true
@@ -619,10 +662,10 @@
             type: "line",
             stack: "总量",
             symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: 6, //圆点大小
+            symbolSize: nowSize(6), //圆点大小
             hoverAnimation: {
                 symbol: "rect",
-                symbolSize: 2
+                symbolSize: nowSize(2)
             },
             itemStyle: {
                 normal: {
@@ -638,18 +681,20 @@
                             color: 'rgba(108,80,243,0)'
                         }], false),
                         shadowColor: 'rgba(108,80,243, 0.9)',
-                        shadowBlur: 20
+                        shadowBlur: nowSize(20)
                     },
                     lineStyle: {
                         //线的颜色
-                        color: "#d499fe"
+                        color: "#d499fe",
+                        width: nowSize(1)
                     },
                     label: {
                         //以及在折线图每个日期点顶端显示数字
                         show: false,
                         position: "top",
                         textStyle: {
-                            color: "white"
+                            color: "white",
+                            fontSize: nowSize(14)
                         }
                     }
                 }

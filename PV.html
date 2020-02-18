@@ -187,17 +187,19 @@
 <script src="./layui/layui.all.js"></script>
 <script src="./js/echarts.min.js"></script>
 <script>
+    //当前视口宽度
+    let nowClientWidth = document.documentElement.clientWidth;
+
+    //  换算方法
+    function nowSize(val, initWidth = 1920) {
+        return val * (nowClientWidth / initWidth);
+    }
+
     // PV 柱状图
     PV_line = echarts.init(document.getElementById("PV_line"));
     PV_line.setOption({
         color: ["#00ffff"],
-        // legend: {
-        //     top: "5%",
-        //     right: '10%',
-        //     textStyle: {
-        //         color: "#768ea3"
-        //     }
-        // },
+        // legend: {},
         tooltip: {},
         grid: {
             top: "20%",
@@ -227,7 +229,12 @@
                 lineStyle: {
                     type: "solid",
                     color: "#768ea3", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14)
                 }
             },
             boundaryGap: true, // 间隔
@@ -241,20 +248,26 @@
                 lineStyle: {
                     type: "solid",
                     color: "#768ea3", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14)
                 }
             },
             splitLine: {
                 // 分隔线
                 show: true,
                 lineStyle: {
-                    color: ["#5864a1"]
+                    color: ["#5864a1"],
+                    while: nowSize(1)
                 }
             }
         },
         series: [{
             type: "bar",
-            barWidth: 30
+            barWidth: nowSize(30)
         }]
     });
     PV_line.resize();
@@ -276,8 +289,12 @@
             right: '5%',
             data: ['2018', '2019'],
             textStyle: {
-                color: ["#FF4DCB", "#2BFAFF"]
-            }
+                color: ["#FF4DCB", "#2BFAFF"],
+                fontSize: nowSize(14)
+            },
+            itemWidth: nowSize(10),
+            itemHeight: nowSize(10),
+            itemGap: nowSize(12)
         },
         grid: {
             top: "20%",
@@ -297,28 +314,39 @@
                 lineStyle: {
                     type: "solid",
                     color: "#5864a1", //轴线的颜色
-                    width: "1" //坐标线的宽度
+                    width: nowSize(1) //坐标线的宽度
                 }
             },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14)
+                }
+            }
         }],
         yAxis: [{
             name: "( kwh )",
             type: "value",
             min: 0,
             max: 120,
-            splitNumber: 7,
+            splitNumber: nowSize(7),
             axisLine: {
                 lineStyle: {
                     type: "solid",
                     color: "#5864a1", //轴线的颜色
-                    width: "0" //坐标线的宽度
+                    width: nowSize(0) //坐标线的宽度
                 }
             },
             splitLine: {
                 // 分隔线
                 show: true,
                 lineStyle: {
-                    color: ["#252a7d"]
+                    color: ["#252a7d"],
+                    width: nowSize(1)
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    fontSize: nowSize(14)
                 }
             }
         }],
@@ -344,18 +372,18 @@
             type: "line",
             // stack: "总量",
             symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: 5, //圆点大小
+            symbolSize: nowSize(5), //圆点大小
             lineStyle: {
-                width: 1
+                width: nowSize(1)
             }
         }, {
             name: "2019",
             type: "line",
             // stack: "总量",
             symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: 5, //圆点大小
+            symbolSize: nowSize(5), //圆点大小
             lineStyle: {
-                width: 1
+                width: nowSize(1)
             }
         }]
     });
