@@ -1,13 +1,14 @@
-html{
+html {
   font-size: 12px;
 }
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-size: 100% 100%;
   -webkit-text-size-adjust: none;
-  min-width:1920px;
+  min-width: 1920px;
 }
 
 // 临时边框
@@ -20,7 +21,8 @@ body {
   width: 100%;
   height: 100%;
 }
-.echart_line{
+
+.echart_line {
   width: 100%;
   height: 80%;
 }
@@ -30,6 +32,7 @@ body {
   width: 100%;
   background-size: 100% 100%;
 }
+
 // 共用头部
 .header {
   display: flex;
@@ -37,6 +40,7 @@ body {
   align-items: center;
   width: 100%;
   height: 107px;
+
   // background-color: #07144b;
   .header_logo {
     width: 152px;
@@ -44,6 +48,7 @@ body {
     font-size: 0;
     margin-left: 50px;
   }
+
   .header_right {
     height: 18px;
     font-size: 18px;
@@ -51,6 +56,7 @@ body {
     display: flex;
     align-items: center;
     margin-right: 50px;
+
     .header-logout {
       width: 90px;
       height: 37px;
@@ -60,16 +66,19 @@ body {
     }
   }
 }
+
 // 共用主体
 .com_main {
   flex-grow: 1;
   padding: 10px 5px;
   // background-color: #261a67;
 }
+
 // 共用标题
 .com_title {
   font-size: 18px;
   padding: 50px 0 0 40px;
+
   span {
     width: 10px;
     height: 22px;
@@ -77,56 +86,70 @@ body {
     background-color: #fee617;
   }
 }
+
 .pt {
   padding-top: 0 !important;
 }
+
 // 颜色
 .yellow {
   color: #fae815;
 }
+
 .red {
   color: #ff0500;
 }
+
 .orange {
   color: #fa8d01;
 }
+
 .blue {
   color: #04ffff;
 }
+
 .green {
   color: green;
 }
+
 // 共用大标题
 .com-mid_title {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0 10px 0;
+
   .com-mid_text {
     width: 232px;
     font-size: 34px;
     font-weight: bold;
     text-align: center;
   }
+
   .com-mid-title_cl {
     width: 36px;
     height: 57px;
   }
+
   .com-mid-title_cr {
     width: 36px;
     height: 57px;
   }
 }
+
 // 警告信息
 .com_alarm {
   padding: 0 60px;
+
   .com-alarm_title {
     font-size: 15px;
     margin: 20px 0;
   }
+
   .com-alarm_dd {
     font-size: 15px;
     margin: 10px 0;
+
     .com-alarm-dd_badge {
       box-shadow: inset 0 0 12px 1px #4288b9;
       font-size: 16px;
@@ -142,16 +165,19 @@ body {
     }
   }
 }
+
 // 共用卡片
 .com_cardBox {
   width: 370px;
   margin: auto;
+
   .row {
     .layui-card {
       background: none;
       border: 1px solid #5365a0;
       margin: 0;
       padding: 0;
+
       .layui-card-header {
         height: 35px;
         line-height: 35px;
@@ -163,6 +189,7 @@ body {
         margin: 0;
         font-size: 16px;
       }
+
       .layui-card-body {
         font-size: 16px;
         height: 50px;
@@ -184,6 +211,7 @@ body {
     font-size: 16px;
     color: #ccc;
     margin: 15px 0;
+
     .layui-form-label {
       width: auto;
       padding: 0;
@@ -192,15 +220,18 @@ body {
       white-space: nowrap;
       cursor: inherit;
     }
+
     .layui-input-inline {
       margin: 0;
       padding: 0;
       width: auto;
     }
+
     .layui-form-mid {
       padding: 0 !important;
       line-height: normal;
     }
+
     .input-null {
       padding: 0 20px;
       margin: 0 10px;
@@ -220,10 +251,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   .login_box {
     position: relative;
     width: 716px;
     height: 642px;
+
     // margin: auto;
     .login_title {
       height: 43px;
@@ -233,6 +266,7 @@ body {
       margin-top: 77px;
       margin-bottom: 15px;
     }
+
     .login_title2 {
       text-align: center;
       height: 34px;
@@ -241,6 +275,7 @@ body {
       color: rgba(255, 255, 255, 1);
       opacity: 0.38;
     }
+
     .login_form {
       .login_cont {
         width: 438px;
@@ -251,32 +286,40 @@ body {
         display: flex;
         align-items: center;
         padding: 0 20px;
+
         .login-cont_i {
           width: 36px;
           height: 36px;
         }
+
         input {
           background: none;
           margin-left: 15px;
           font-size: 25px;
           color: #fff;
+
           &::-webkit-input-placeholder {
             color: #fff;
           }
+
           &:-moz-placeholder {
             color: #fff;
           }
+
           &::-moz-placeholder {
             color: #fff;
           }
+
           &:-ms-input-placeholder {
             color: #fff;
           }
         }
       }
+
       .password {
         top: 320px;
       }
+
       .login_button {
         width: 444px;
         height: 87px;
@@ -295,17 +338,21 @@ body {
     .PV-left_on {
       height: 80%;
       min-height: 450px;
+
       .layui-form {
         padding: 10px 60px;
         padding-bottom: 5px;
       }
     }
+
     .PV-left_und {
       height: 20%;
       min-height: 112px;
+
       .PV_meter {
         display: flex;
         justify-content: center;
+
         .PV-meter_li {
           width: 30px;
           height: 40px;
@@ -318,12 +365,14 @@ body {
       }
     }
   }
+
   .PV_right {
     .PV-right_on {
       height: 35%;
       min-height: 196px;
       display: flex;
       flex-direction: column;
+
       .PV_time {
         flex-grow: 1;
         display: flex;
@@ -334,13 +383,16 @@ body {
         border-right: none;
         justify-content: space-around;
         align-items: center;
+
         .PV-time_li {
           display: flex;
           flex-direction: column;
           align-items: center;
+
           .PV-time_p {
             font-size: 15px;
           }
+
           .PV-time_bg {
             font-size: 15px;
             margin: 15px 0;
@@ -348,29 +400,36 @@ body {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+
             .PV-time_num {
               font-size: 15px;
             }
+
             .PV-time_danwei {
               font-size: 15px;
             }
           }
+
           .PV-time-w1 {
             width: 60px;
             height: 60px;
           }
+
           .PV-time-w2 {
             width: 98px;
             height: 98px;
           }
+
           .PV-time-w3 {
             width: 105px;
             height: 105px;
           }
+
           .PV-time-w4 {
             width: 82px;
             height: 82px;
           }
+
           .PV-time-w5 {
             width: 107px;
             height: 107px;
@@ -378,10 +437,12 @@ body {
         }
       }
     }
+
     .PV-right_mid {
       height: 30%;
       min-height: 168px;
     }
+
     .PV-right_und {
       height: 35%;
       min-height: 196px;
@@ -394,15 +455,19 @@ body {
   .com_title {
     padding: 34px 0 0 20px;
   }
+
   .bat2_on {
     height: 70%;
+
     .bat2-on_box {
       width: 30%;
       height: 100%;
       padding: 0;
+
       .on_row {
         height: 50%;
         position: relative;
+
         .i_ri {
           width: 28px;
           height: 28px;
@@ -410,34 +475,42 @@ body {
           top: 30px;
           right: 25px;
         }
+
         .layui-form {
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 15px 32px;
+
           .layui-form-item {
             display: flex;
             align-items: center;
             margin: 10px 0;
+
             .layui-form-label {
               font-size: 14px;
               // flex-basis: 155px;
             }
+
             .input-null {
               font-size: 14px;
               padding: 0 20px;
             }
+
             .layui-word-aux {
               font-size: 14px;
               text-align: center;
             }
           }
+
           .row {
             display: flex;
             width: 100%;
             justify-content: space-between;
+
             &:last-child {
               justify-content: center;
+
               .layui-form-item {
                 justify-content: center;
               }
@@ -446,16 +519,20 @@ body {
         }
       }
     }
+
     .bat2-on_mid {
       width: 40%;
       display: flex;
       flex-direction: column;
+
       .com-mid_cont {
         flex-grow: 1;
+
         .bat2-mid_left {
           .bat2-mid_form {
             height: 65%;
           }
+
           .bat2-mid_num {
             height: 35%;
           }
@@ -463,44 +540,54 @@ body {
           // 内容
           .layui-form {
             padding: 45px;
+
             .layui-form-item {
               display: flex;
+
               .layui-form-label {
                 flex-basis: 100px;
                 text-align: right;
                 font-size: 16px;
               }
+
               .input-null {
                 font-size: 16px;
               }
+
               .layui-word-aux {
                 font-size: 16px;
               }
             }
           }
         }
+
         .bat2-mid_right {
           .bat2-mid_echarts {
             height: 65%;
           }
+
           .bat2-mid_echartsNum {
             height: 35%;
             display: flex;
             padding-top: 10%;
             justify-content: center;
+
             .bat2-mid-echartsNum_ul {
               display: flex;
               flex-direction: column;
               align-items: center;
               margin: 0 20px;
+
               .echartsNum_li {
                 font-size: 16px;
                 margin-bottom: 10px;
               }
+
               .red {
                 border-bottom: 3px solid red;
                 font-weight: 600;
               }
+
               .green {
                 border-bottom: 3px solid green;
                 font-weight: 600;
@@ -511,9 +598,11 @@ body {
       }
     }
   }
+
   .bat2_dow {
     height: 30%;
     position: relative;
+
     .dow_ZS {
       width: 25px;
       height: 45px;
@@ -521,6 +610,7 @@ body {
       top: -23px;
       left: 0;
     }
+
     .dow_ZS2 {
       width: 25px;
       height: 45px;
@@ -528,8 +618,10 @@ body {
       top: -23px;
       right: 0;
     }
+
     .bat2-linkBody {
       position: relative;
+
       .bat2_link {
         display: flex;
         justify-content: center;
@@ -537,85 +629,136 @@ body {
         top: 45px;
         left: 160px;
         height: 80%;
+
         // icon宽高
         .bat2-link_icon1 {
           width: 71px;
           height: 86px;
         }
+
         .bat2-link_icon2 {
           width: 57px;
           height: 63px;
         }
+
         .bat2-link_icon3 {
           width: 77px;
           height: 84px;
         }
+
         // 开关宽高
         .bat2-link-wkey {
           width: 67px;
           height: 18px;
         }
+
         .bat2-link-hkey {
           width: 15px;
           height: 49px;
         }
+
         // kg宽高
         .bat2-link_kg {
           width: 31px;
           height: 28px;
         }
+
         // 电池宽高
         .bat2-link-dc {
           width: 58px;
           height: 95px;
         }
+
         // 横管道
         .bat2-link_hr {
+          position: relative;
           box-shadow: inset 0 0 3px 1px #3d8ec1;
           font-size: 0;
           height: 6px;
         }
+
         // 竖管道
         .bat2-link_hr2 {
+          position: relative;
           box-shadow: inset 0 0 3px 1px #3d8ec1;
           font-size: 0;
           width: 6px;
         }
-        // 管道宽度{
+
+        // 管道宽度
         .link_w1 {
           // 短
           width: 40px;
         }
+
         .link_w2 {
           // 长
           width: 164px;
           position: relative;
         }
+
         .link_h1 {
-          height: 117px;
+          height: 78px;
         }
+
         .link_h2 {
           height: 25px;
         }
+
+        // canvas宽高
+        .canvas_w {
+          width: 40px;
+          height: 4px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .canvas_w2 {
+          width: 164px;
+        }
+
+        .canvas_h {
+          width: 78px;
+          height: 6px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -35px;
+          margin: auto;
+        }
+
+        .canvas_h2 {
+          width: 25px;
+          height: 4px;
+          left: -9px;
+        }
+
         .bat2-link_iconBody {
           display: flex;
           align-items: center;
+
           .bat2-link-wkeyBody {
             position: relative;
+
             .wkey2 {
               position: absolute;
               bottom: -20px;
             }
           }
+
           .bat2-link_kg {
             position: relative;
+
             .bat2-link-kg_ul {
               position: absolute;
-              top: 15px;
+              top: 30px;
               left: 0;
+
               .bat2-link-kg_p {
                 font-size: 12px;
                 width: max-content;
+
                 span {
                   font-size: 12px;
                 }
@@ -623,10 +766,12 @@ body {
             }
           }
         }
+
         .bat2-link_dcBody {
           display: flex;
           position: absolute;
           left: 410px;
+
           .bat2-link_liDc {
             display: flex;
             flex-direction: column;
@@ -634,13 +779,16 @@ body {
             position: absolute;
             top: -15px;
             right: -15px;
+
             .bat2-link-dc {
               position: relative;
+
               .dc_text {
                 width: max-content;
                 position: absolute;
                 top: 16px;
                 left: 65px;
+
                 .dc-text_numb {
                   height: 20px;
                   font-size: 12px;
@@ -659,6 +807,7 @@ body {
   .on_row {
     height: 35%;
   }
+
   .und_row {
     height: 65%;
   }
@@ -666,24 +815,29 @@ body {
   .fault_cont {
     text-align: center;
     padding: 40px 0;
+
     .fault-cont_p {
       font-size: 18px;
     }
+
     .fault-cont_img {
       width: 574px;
       height: 454px;
       margin: auto;
     }
   }
+
   .fault_biaoti {
     width: 275px;
     height: 75px;
     margin: 35px auto 0;
   }
+
   // 异常
   .abn {
     color: rgba(255, 0, 0, 1);
   }
+
   .nor {
     color: #01c0ff;
   }
@@ -694,35 +848,42 @@ body {
   .com_title {
     padding: 34px 0 0 20px;
   }
+
   .on_row {
     height: 35%;
   }
+
   .und_row {
     height: 65%;
   }
 
   .bat3_left {
     width: 30%;
+
     .com_title {
       padding-left: 40px;
     }
-    .on_row{
-      .bat3-left_cd{
+
+    .on_row {
+      .bat3-left_cd {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .bat3-left-cd_bg{
+
+        .bat3-left-cd_bg {
           width: 114px;
           height: 183px;
         }
-        .bat3-left-cd_text{
+
+        .bat3-left-cd_text {
           font-size: 14px;
           margin-top: 10px;
           text-align: center;
         }
       }
     }
+
     .und_row {
       .bat3-left_img {
         width: 254px;
@@ -731,22 +892,29 @@ body {
       }
     }
   }
+
   .bat3_mid {
     width: 40%;
+
     .com_title {
       padding-left: 60px;
     }
+
     .bat3-mid_on {
       margin: 20px 0;
+
       .layui-form-item {
         display: flex;
       }
+
       .bat3-mid_onform {
         padding-left: 70px;
       }
+
       .bat3-mid-onRight {
         position: relative;
         padding-top: 120px;
+
         .bat3_img {
           width: 323px;
           height: 264px;
@@ -758,30 +926,36 @@ body {
         }
       }
     }
+
     .bat3-mid_card {
       width: 600px;
       margin-top: 20px;
     }
+
     .bat3-mid_num {
       // height: 35%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 50px;
+
       .bat3-mid-num_ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 20px;
+
         .num_li {
           font-size: 18px;
           margin-bottom: 10px;
         }
+
         .red {
           border-bottom: 3px solid red;
           font-weight: 600;
           font-size: 24px;
         }
+
         .green {
           border-bottom: 3px solid #00ff36;
           font-weight: 600;
@@ -790,24 +964,31 @@ body {
       }
     }
   }
+
   .bat3_right {
     width: 30%;
+
     .com-mid_title {
       margin-top: 40px;
     }
+
     .bat3-right_dcBox {
       display: flex;
       justify-content: space-around;
+
       .bat3_cd {
         display: flex;
         align-items: center;
         margin: 25px 0;
+
         .bat3-dc_text {
           margin: 0 20px;
-          li{
+
+          li {
             font-size: 12px;
           }
         }
+
         .bat3-dc_bg {
           width: 45px;
           height: 70px;

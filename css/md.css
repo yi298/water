@@ -260,16 +260,33 @@
     width: 106.6px;
   }
   .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_h1 {
-    height: 76.05px;
+    height: 50.7px;
   }
   .bat2_main .bat2_dow .bat2-linkBody .bat2_link .link_h2 {
     height: 16.25px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .canvas_w {
+    width: 26px;
+    height: 3.9px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .canvas_w2 {
+    width: 106.6px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .canvas_h {
+    width: 50.7px;
+    height: 3.9px;
+    left: -22.75px;
+  }
+  .bat2_main .bat2_dow .bat2-linkBody .bat2_link .canvas_h2 {
+    width: 16.25px;
+    height: 2.6px;
+    left: -5.85px;
   }
   .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link-wkeyBody .wkey2 {
     bottom: -13px;
   }
   .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg .bat2-link-kg_ul {
-    top: 9.75px;
+    top: 19.5px;
     left: 0;
   }
   .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg .bat2-link-kg_ul .bat2-link-kg_p {

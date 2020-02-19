@@ -2,707 +2,454 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/scaffolding.css">
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/md.css" />
-    <link rel="stylesheet" href="./css/lg.css">
-    <link rel="stylesheet" href="./css/liudong.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/scaffolding.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/md.css" />
+  <link rel="stylesheet" href="./css/lg.css" />
+  <link rel="stylesheet" href="./css/liudong.css" />
 </head>
 
 <body style="background-image: url('./static/bg.jpg');">
-    <div class="header bg" style="background-image: url('./static/title.png');">
-        <div class="header_logo bg" style="background-image: url('static/logo.png');">
-            logo
-        </div>
-        <div class="header_right">
-            <div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
-            <div class="header-logout bg" style="background-image: url('/static/button.png');">
-                退出
-            </div>
-        </div>
+  <div class="header bg" style="background-image: url('./static/title.png');">
+    <div class="header_logo bg" style="background-image: url('static/logo.png');">
+      logo
     </div>
-    <div class="com_main bat2_main">
-        <!-- 上 -->
-        <div class="row bat2_on">
-            <!-- 上左 -->
-            <div class="bat2-on_box">
-                <div class="on_row bg" style="background-image: url('./static/bat2_left1.png');">
-                    <div class="com_title"><span>&nbsp;&nbsp;</span>电池电压信息</div>
-                    <form class="layui-form" action="">
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池电压簇号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池电压簇号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池电压包号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池电压包号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池电压节号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池电压节号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池电压值：</label>
-                                <div class="layui-input-inline input-null">3200.0</div>
-                                <div class="layui-form-mid layui-word-aux">mV</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池电压值：</label>
-                                <div class="layui-input-inline input-null">3200.0</div>
-                                <div class="layui-form-mid layui-word-aux">mV</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">单节最大压差：</label>
-                                <div class="layui-input-inline input-null">50.0</div>
-                                <div class="layui-form-mid layui-word-aux">mV</div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="on_row bg" style="background-image: url('./static/bat2_left2.png');">
-                    <div class="com_title"><span>&nbsp;&nbsp;</span>电池温度信息</div>
-                    <form class="layui-form" action="">
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池温度簇号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池温度簇号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池温度包号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池温度包号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池温度节号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池温度节号：</label>
-                                <div class="layui-input-inline input-null">5</div>
-                                <div class="layui-form-mid layui-word-aux">No</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最大单节电池温度值：</label>
-                                <div class="layui-input-inline input-null">25.0</div>
-                                <div class="layui-form-mid layui-word-aux">℃</div>
-                            </div>
-                            <div class="layui-form-item col-lg-6">
-                                <label class="layui-form-label">最小单节电池温度值：</label>
-                                <div class="layui-input-inline input-null">25.0</div>
-                                <div class="layui-form-mid layui-word-aux">℃</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">单节最大温差：</label>
-                                <div class="layui-input-inline input-null">1.0</div>
-                                <div class="layui-form-mid layui-word-aux">℃</div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <div class="header_right">
+      <div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
+      <div class="header-logout bg" style="background-image: url('/static/button.png');">
+        退出
+      </div>
+    </div>
+  </div>
+  <div class="com_main bat2_main">
+    <!-- 上 -->
+    <div class="row bat2_on">
+      <!-- 上左 -->
+      <div class="bat2-on_box">
+        <div class="on_row bg" style="background-image: url('./static/bat2_left1.png');">
+          <div class="com_title"><span>&nbsp;&nbsp;</span>电池电压信息</div>
+          <form class="layui-form" action="">
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池电压簇号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池电压簇号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
             </div>
-            <!-- 上中 -->
-            <div class="bg bat2-on_mid" style="background-image: url('./static/bat2_mid.png');">
-                <div class="com-mid_title">
-                    <div class="com-mid-title_cl bg" style="background-image: url('./static/bat2_cl.png');"></div>
-                    <h3 class="com-mid_text">10KV储能站1</h3>
-                    <div class="com-mid-title_cr bg" style="background-image: url('./static/bat2_cr.png');"></div>
-                </div>
-                <div class="row com-mid_cont">
-                    <div class="col-lg-6 bat2-mid_left">
-                        <form class="bat2-mid_form layui-form" action="">
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">电压：</label>
-                                <div class="layui-input-inline input-null">700.0</div>
-                                <div class="layui-form-mid layui-word-aux">V</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">电流：</label>
-                                <div class="layui-input-inline input-null">500.0</div>
-                                <div class="layui-form-mid layui-word-aux">A</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">功率：</label>
-                                <div class="layui-input-inline input-null">350.0</div>
-                                <div class="layui-form-mid layui-word-aux">KW</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">日充电量：</label>
-                                <div class="layui-input-inline input-null">1000.0</div>
-                                <div class="layui-form-mid layui-word-aux">kWh</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">日放电量：</label>
-                                <div class="layui-input-inline input-null">1000.0</div>
-                                <div class="layui-form-mid layui-word-aux">kWh</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">历史充电量：</label>
-                                <div class="layui-input-inline input-null">1000.0</div>
-                                <div class="layui-form-mid layui-word-aux">kWh</div>
-                            </div>
-                            <div class="layui-form-item">
-                                <label class="layui-form-label">历史放电量：</label>
-                                <div class="layui-input-inline input-null">1000.0</div>
-                                <div class="layui-form-mid layui-word-aux">kWh</div>
-                            </div>
-                        </form>
-                        <div class="bat2-mid_num">
-                            <div class="com_title pt">
-                                <span>&nbsp;&nbsp;</span>储能站监控系统告警状况
-                            </div>
-                            <dl class="com_alarm">
-                                <!-- <dt class="com-alarm_title">光伏电站监控系统告警情况：</dt> -->
-                                <dd class="com-alarm_dd">
-                                    <span class="com-alarm-dd_badge">1</span>告警信息：<span class="yellow">5</span>个
-                                </dd>
-                                <dd class="com-alarm_dd">
-                                    <span class="com-alarm-dd_badge">2</span>故障信息：<span class="red">4</span>个
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 bat2-mid_right">
-                        <div class="bat2-mid_echarts">
-                            <div id="bat2_pie1" class="echart">饼图</div>
-                        </div>
-                        <div class="bat2-mid_echartsNum">
-                            <ul class="bat2-mid-echartsNum_ul">
-                                <li class="echartsNum_li">可充能量</li>
-                                <li class="echartsNum_li green ">1000.0 kWh</li>
-                            </ul>
-                            <ul class="bat2-mid-echartsNum_ul">
-                                <li class="echartsNum_li">可充能量</li>
-                                <li class="echartsNum_li red">1000.0 kWh</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池电压包号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池电压包号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
             </div>
-            <!-- 上右 -->
-            <div class="bat2-on_box">
-                <div class="on_row bg" style="background-image: url('./static/bat2_right1.png');">
-                    <div class="com_title"><span>&nbsp;&nbsp;</span>一周日充放电量</div>
-                    <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
-                    <div id="bat2_line" class="echart_line">柱状图</div>
-                </div>
-                <div class="on_row bg" style="background-image: url('./static/bat2_right2.png');">
-                    <div class="com_title"><span>&nbsp;&nbsp;</span>历史实时功率</div>
-                    <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
-                    <div id="bat2_line2" class="echart_line">折线图</div>
-                </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池电压节号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池电压节号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
             </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池电压值：</label>
+                <div class="layui-input-inline input-null">3200.0</div>
+                <div class="layui-form-mid layui-word-aux">mV</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池电压值：</label>
+                <div class="layui-input-inline input-null">3200.0</div>
+                <div class="layui-form-mid layui-word-aux">mV</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="layui-form-item">
+                <label class="layui-form-label">单节最大压差：</label>
+                <div class="layui-input-inline input-null">50.0</div>
+                <div class="layui-form-mid layui-word-aux">mV</div>
+              </div>
+            </div>
+          </form>
         </div>
-        <!-- 下 -->
-        <div class="row bat2_dow">
-            <div class="dow_ZS bg" style="background-image: url('./static/bat2_ZS.png');"></div>
-            <div class="dow_ZS2 bg" style="background-image: url('./static/bat2_ZS2.png');"></div>
-            <div class="col-lg-12 bg bat2-linkBody" style="background-image: url('./static/bat2_und.png');">
-                <div class="com_title"><span>&nbsp;&nbsp;</span>储能站电气连接图</div>
-                <div class="bat2_link">
-                    <ul class="bat2-link_iconBody">
-                        <li class="bat2-link_liIcon bat2-link_icon1 bg" style="background-image: url('./static/bat2_icon1.png');"></li>
-                        <li class="bat2-link_liIcon bat2-link_hr link_w1">管道</li>
-                        <li class="bat2-link_liIcon bat2-link-wkeyBody">
-                            <div class="bat2-link-wkey bg" style="background-image: url('./static/bat2_wk2.png');"></div>
-                            <div class="bat2-link-wkey bg wkey2" style="background-image: url('./static/bat2_wk1.png');"></div>
-                        </li>
-                        <li class="bat2-link_liIcon bat2-link_hr link_w1">管道</li>
-                        <li class="bat2-link_liIcon bat2-link_icon2 bg" style="background-image: url('./static/bat2_icon2.png');"></li>
-                        <li class="bat2-link_liIcon bat2-link_hr link_w1">管道</li>
-                        <li class="bat2-link_liIcon bat2-link_kg bg" style="background-image: url('./static/bat2_kg1.png');">
-                            <ul class="bat2-link-kg_ul">
-                                <li class="bat2-link-kg_p"><span class="red">●</span>切开</li>
-                                <li class="bat2-link-kg_p"><span class="green">●</span>投入</li>
-                            </ul>
-                        </li>
-                        <li class="bat2-link_liIcon bat2-link_hr link_w1">管道</li>
-                        <li class="bat2-link_liIcon bat2-link_icon3 bg" style="background-image: url('./static/bat2_icon3.png');"></li>
-                    </ul>
-                    <div class="bat2-link_dcBody">
-                        <!-- 长管道 -->
+        <div class="on_row bg" style="background-image: url('./static/bat2_left2.png');">
+          <div class="com_title"><span>&nbsp;&nbsp;</span>电池温度信息</div>
+          <form class="layui-form" action="">
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池温度簇号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池温度簇号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池温度包号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池温度包号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池温度节号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池温度节号：</label>
+                <div class="layui-input-inline input-null">5</div>
+                <div class="layui-form-mid layui-word-aux">No</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最大单节电池温度值：</label>
+                <div class="layui-input-inline input-null">25.0</div>
+                <div class="layui-form-mid layui-word-aux">℃</div>
+              </div>
+              <div class="layui-form-item col-lg-6">
+                <label class="layui-form-label">最小单节电池温度值：</label>
+                <div class="layui-input-inline input-null">25.0</div>
+                <div class="layui-form-mid layui-word-aux">℃</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="layui-form-item">
+                <label class="layui-form-label">单节最大温差：</label>
+                <div class="layui-input-inline input-null">1.0</div>
+                <div class="layui-form-mid layui-word-aux">℃</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 上中 -->
+      <div class="bg bat2-on_mid" style="background-image: url('./static/bat2_mid.png');">
+        <div class="com-mid_title">
+          <div class="com-mid-title_cl bg" style="background-image: url('./static/bat2_cl.png');"></div>
+          <h3 class="com-mid_text">10KV储能站1</h3>
+          <div class="com-mid-title_cr bg" style="background-image: url('./static/bat2_cr.png');"></div>
+        </div>
+        <div class="row com-mid_cont">
+          <div class="col-lg-6 bat2-mid_left">
+            <form class="bat2-mid_form layui-form" action="">
+              <div class="layui-form-item">
+                <label class="layui-form-label">电压：</label>
+                <div class="layui-input-inline input-null">700.0</div>
+                <div class="layui-form-mid layui-word-aux">V</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">电流：</label>
+                <div class="layui-input-inline input-null">500.0</div>
+                <div class="layui-form-mid layui-word-aux">A</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">功率：</label>
+                <div class="layui-input-inline input-null">350.0</div>
+                <div class="layui-form-mid layui-word-aux">KW</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">日充电量：</label>
+                <div class="layui-input-inline input-null">1000.0</div>
+                <div class="layui-form-mid layui-word-aux">kWh</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">日放电量：</label>
+                <div class="layui-input-inline input-null">1000.0</div>
+                <div class="layui-form-mid layui-word-aux">kWh</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">历史充电量：</label>
+                <div class="layui-input-inline input-null">1000.0</div>
+                <div class="layui-form-mid layui-word-aux">kWh</div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">历史放电量：</label>
+                <div class="layui-input-inline input-null">1000.0</div>
+                <div class="layui-form-mid layui-word-aux">kWh</div>
+              </div>
+            </form>
+            <div class="bat2-mid_num">
+              <div class="com_title pt">
+                <span>&nbsp;&nbsp;</span>储能站监控系统告警状况
+              </div>
+              <dl class="com_alarm">
+                <!-- <dt class="com-alarm_title">光伏电站监控系统告警情况：</dt> -->
+                <dd class="com-alarm_dd">
+                  <span class="com-alarm-dd_badge">1</span>告警信息：<span class="yellow">5</span>个
+                </dd>
+                <dd class="com-alarm_dd">
+                  <span class="com-alarm-dd_badge">2</span>故障信息：<span class="red">4</span>个
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-lg-6 bat2-mid_right">
+            <div class="bat2-mid_echarts">
+              <div id="bat2_pie1" class="echart">饼图</div>
+            </div>
+            <div class="bat2-mid_echartsNum">
+              <ul class="bat2-mid-echartsNum_ul">
+                <li class="echartsNum_li">可充能量</li>
+                <li class="echartsNum_li green ">1000.0 kWh</li>
+              </ul>
+              <ul class="bat2-mid-echartsNum_ul">
+                <li class="echartsNum_li">可充能量</li>
+                <li class="echartsNum_li red">1000.0 kWh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 上右 -->
+      <div class="bat2-on_box">
+        <div class="on_row bg" style="background-image: url('./static/bat2_right1.png');">
+          <div class="com_title"><span>&nbsp;&nbsp;</span>一周日充放电量</div>
+          <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
+          <div id="bat2_line" class="echart_line">柱状图</div>
+        </div>
+        <div class="on_row bg" style="background-image: url('./static/bat2_right2.png');">
+          <div class="com_title"><span>&nbsp;&nbsp;</span>历史实时功率</div>
+          <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
+          <div id="bat2_line2" class="echart_line">折线图</div>
+        </div>
+      </div>
+    </div>
+    <!-- 下 -->
+    <div class="row bat2_dow">
+      <div class="dow_ZS bg" style="background-image: url('./static/bat2_ZS.png');"></div>
+      <div class="dow_ZS2 bg" style="background-image: url('./static/bat2_ZS2.png');"></div>
+      <div class="col-lg-12 bg bat2-linkBody" style="background-image: url('./static/bat2_und.png');">
+        <div class="com_title"><span>&nbsp;&nbsp;</span>储能站电气连接图</div>
+        <div class="bat2_link">
+          <ul class="bat2-link_iconBody">
+            <li class="bat2-link_liIcon bat2-link_icon1 bg" style="background-image: url('./static/bat2_icon1.png');">
+            </li>
+            <li class="bat2-link_liIcon bat2-link_hr link_w1">
+              <!--class + 默认向右、left-tf向左、top-tf向上、down-tf向下 -->
+              <canvas id="w1" class="canvas_w right-tf">向左</canvas>
+            </li>
+            <li class="bat2-link_liIcon bat2-link-wkeyBody">
+              <div class="bat2-link-wkey bg" style="background-image: url('./static/bat2_wk2.png');"></div>
+              <div class="bat2-link-wkey bg wkey2" style="background-image: url('./static/bat2_wk1.png');"></div>
+            </li>
+            <li class="bat2-link_liIcon bat2-link_hr link_w1">
+              <canvas id="w2" class="canvas_w right-tf">默认向右</canvas>
+            </li>
+            <li class="bat2-link_liIcon bat2-link_icon2 bg" style="background-image: url('./static/bat2_icon2.png');">
+            </li>
+            <li class="bat2-link_liIcon bat2-link_hr link_w1">
+              <canvas id="w3" class="canvas_w right-tf">默认向右</canvas>
+            </li>
+            <li class="bat2-link_liIcon bat2-link_kg bg" style="background-image: url('./static/bat2_kg1.png');">
+              <ul class="bat2-link-kg_ul">
+                <li class="bat2-link-kg_p"><span class="red">●</span>切开</li>
+                <li class="bat2-link-kg_p">
+                  <span class="green">●</span>投入
+                </li>
+              </ul>
+            </li>
+            <li class="bat2-link_liIcon bat2-link_hr link_w1">
+              <canvas id="w4" class="canvas_w right-tf">默认向右</canvas>
+            </li>
+            <li class="bat2-link_liIcon bat2-link_icon3 bg" style="background-image: url('./static/bat2_icon3.png');">
+            </li>
+          </ul>
+          <div class="bat2-link_dcBody">
+            <!-- 长管道 -->
 
-                        <div class="bat2-link_hr2 link_h1">
-                        </div>
-                        <!-- 横管道——长 -->
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg1.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk1.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="bat2-link_hr link_w2">
-                            <li class="bat2-link_liDc">
-                                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
-                                <div class="bat2-link_hr2 link_h2">短管道</div>
-                                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
-                                    <ul class="dc_text">
-                                        <li class="dc-text_numb">电压：700.0 V</li>
-                                        <li class="dc-text_numb">电池：20.0 A</li>
-                                        <li class="dc-text_numb">SOC：50.0 %</li>
-                                        <li class="dc-text_numb">温度：25.0 ℃</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="bat2-link_hr2 link_h1">
+              <canvas id="h1" class="canvas_h up-tf">向上</canvas>
             </div>
+            <!-- 横管道——长 -->
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w5" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h2" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h3" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w6" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg1.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h4" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk1.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h5" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w7" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h6" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h7" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w8" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h8" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h9" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w9" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h10" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h11" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w10" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h12" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h13" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="bat2-link_hr link_w2">
+              <canvas id="w11" class="canvas_w canvas_w2 right-tf">长横管道</canvas>
+              <li class="bat2-link_liDc">
+                <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h14" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
+                <div class="bat2-link_hr2 link_h2">
+              <canvas id="h15" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                </div>
+                <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
+                  <ul class="dc_text">
+                    <li class="dc-text_numb">电压：700.0 V</li>
+                    <li class="dc-text_numb">电池：20.0 A</li>
+                    <li class="dc-text_numb">SOC：50.0 %</li>
+                    <li class="dc-text_numb">温度：25.0 ℃</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
 <script src="./js/echarts.min.js"></script>
-<!-- <script src="./js/index.js"></script> -->
-<!-- <script src="./js/zk_liudong.js"></script>
-<script src="./js/liudong.js"></script> -->
-<script>
-    //当前视口宽度
-    let nowClientWidth = document.documentElement.clientWidth;
+<script src="./js/zk_liudong.js"></script>
+<script src="./js/bat_2.js"></script>
 
-    //  换算方法
-    function nowSize(val, initWidth = 1920) {
-        return val * (nowClientWidth / initWidth);
-    }
-
-    // bat_2 饼状图
-    bat2_pie1 = echarts.init(document.getElementById("bat2_pie1"));
-    bat2_pie1.setOption({
-        color: ["#fe0100", "#00ff36", "#3399ff"],
-        tooltip: {
-            trigger: "item",
-            formatter: "{a} <br/>{b} : {c} ({d}%)",
-            textStyle: {
-                fontSize: nowSize(14),
-                // fontSize: fontSize(0.12),
-            }
-        },
-        legend: {
-            orient: "horizontal",
-            top: "15%",
-            right: "10%",
-            data: ["可放电量", "可充电量"],
-            textStyle: {
-                color: "#fff",
-                // fontSize: fontSize(0.16),
-                fontSize: nowSize(14),
-            },
-            itemWidth: nowSize(10),
-            itemHeight: nowSize(10),
-            itemGap: nowSize(12)
-        },
-        series: [{
-            name: "电量",
-            type: "pie",
-            radius: "55%",
-            center: ["50%", "60%"],
-            label: {
-                textStyle: {
-                    color: "#fff",
-                    fontSize: nowSize(14)
-                },
-                lineStyle: {
-                    width: nowSize(1)
-                }
-            },
-            // startAngle: -20,  // 起始角度
-            data: [{
-                value: 30,
-                name: "可放电量"
-            }, {
-                value: 70,
-                name: "可充电量"
-            }],
-            emphasis: {
-                itemStyle: {
-                    shadowBlur: nowSize(10),
-                    shadowOffsetX: 0,
-                    shadowColor: "rgba(0, 0, 0, 0.5)"
-                }
-            }
-        }]
-    });
-    bat2_pie1.resize();
-
-    // bat_2 柱状图
-    bat2_line = echarts.init(document.getElementById("bat2_line"));
-    bat2_line.setOption({
-        color: ["#03ff31", "#ff0301", "#616067"],
-        legend: {
-            top: "5%",
-            right: '10%',
-            textStyle: {
-                color: "#768ea3",
-                fontSize: nowSize(14),
-            },
-            itemWidth: nowSize(10),
-            itemHeight: nowSize(10),
-            itemGap: nowSize(12)
-        },
-        tooltip: {},
-        grid: {
-            top: "20%",
-            left: "10%",
-            right: "10%",
-            bottom: "10%",
-            containLabel: true
-        },
-        dataset: {
-            source: [
-                ["星期", "充电", "放电"],
-                ["周一", 70, 40],
-                ["周二", 80, 85],
-                ["周三", 100, 110],
-                ["周四", 140, 100],
-                ["周五", 100, 95],
-                ["周六", 70, 40],
-                ["周日", 80, 85]
-            ]
-        },
-        xAxis: [{
-            type: "category",
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#768ea3", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                },
-                textStyle: {
-                    fontSize: nowSize(20),
-                }
-            },
-            axisLabel: {
-                show: true,
-                textStyle: {
-                    color: "#a1d8f1",
-                    fontSize: nowSize(14)
-                }
-            },
-        }],
-
-        yAxis: [{
-            name: "( kWh )",
-            type: 'value',
-            axisTick: {
-                show: false,
-            },
-            axisLine: {
-                show: true,
-                lineStyle: {
-                    color: "#45647f",
-                    width: nowSize(1),
-                    type: "solid"
-                },
-            },
-            splitLine: {
-                show: false
-            },
-            axisLabel: {
-                show: true,
-                textStyle: {
-                    color: '#a1d8f1',
-                    fontSize: nowSize(14)
-                }
-            }
-        }],
-        series: [{
-            type: "bar",
-            barWidth: nowSize(15)
-        }, {
-            type: "bar",
-            barWidth: nowSize(15)
-        }]
-    });
-    bat2_line.resize();
-
-    // bat_2 折线图
-    bat2_line2 = echarts.init(document.getElementById("bat2_line2"));
-    bat2_line2.setOption({
-        color: ["#235b7f", "#30776a", "#616067"],
-        tooltip: {
-            trigger: "axis",
-            axisPointer: {
-                type: "cross",
-                label: {
-                    backgroundColor: "#6a7985"
-                }
-            },
-            textStyle: {
-                fontSize: nowSize(14),
-            }
-            // 自定义单位
-            // formatter: function (params) {
-            //   var res = '<div><p>' + params[0].name + '月</p></div>'
-            //   for (var i = 0; i < params.length; i++) {
-            //     res += '<p>' + params[i].seriesName + ':' + params[i].data + '</p>'
-            //   }
-            //   return res;
-            // },
-        },
-        grid: {
-            top: "15%",
-            left: "10%",
-            right: "5%",
-            bottom: "10%",
-            containLabel: true
-        },
-        dataset: {
-            source: [
-                ["日期", "功率"],
-                ["7/17\n00:00", -10],
-                ["7/24\n14:00", 120],
-                ["7/31\n16:00", 60],
-                ["8/7\n18:00", 90],
-                ["8/14\n20:00", 120],
-                ["8/21\n22:00", 70],
-                ["8/29\n00:00", 80],
-                ["9/5\n14:00", 60],
-                ["10/12\n16:00", 240],
-                ["10/19\n18:00", 300],
-            ]
-        },
-        xAxis: [{
-            type: "category",
-            boundaryGap: true, // 间隔
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#5864a1", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                },
-                onZero: false
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14),
-                }
-            },
-            axisTick: {
-                alignWithLabel: true
-            },
-
-        }],
-        yAxis: [{
-            name: "( KW )",
-            type: "value",
-            min: -120,
-            max: 300,
-            // splitNumber: 8,
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#5864a1", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                }
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14),
-                },
-            },
-            splitLine: {
-                // 分隔线
-                show: false,
-                lineStyle: {
-                    color: ["#5864a1"],
-                    width: nowSize(1)
-                }
-            },
-            scale: true
-        }],
-        series: [{
-            symbol: null,
-            // smooth: true,
-            name: "订单数量",
-            type: "line",
-            stack: "总量",
-            symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: nowSize(6), //圆点大小
-            hoverAnimation: {
-                symbol: "rect",
-                symbolSize: nowSize(2)
-            },
-            itemStyle: {
-                normal: {
-                    color: "#fcfdfa",
-                    areaStyle: {
-                        type: "default",
-                        //渐变色实现
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: '#9d83d8'
-                        }, {
-                            offset: 1,
-                            color: 'rgba(108,80,243,0)'
-                        }], false),
-                        shadowColor: 'rgba(108,80,243, 0.9)',
-                        shadowBlur: nowSize(20)
-                    },
-                    lineStyle: {
-                        //线的颜色
-                        color: "#d499fe",
-                        width: nowSize(1)
-                    },
-                    label: {
-                        //以及在折线图每个日期点顶端显示数字
-                        show: false,
-                        position: "top",
-                        textStyle: {
-                            color: "white",
-                            fontSize: nowSize(14)
-                        }
-                    }
-                }
-            },
-            data: [-60, 120, 60, 100, 120, 60, 240, 300]
-        }]
-    });
-    bat2_line2.resize();
-</script>
 
 </html>

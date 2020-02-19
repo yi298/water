@@ -1,38 +1,21 @@
-/*
- * 管道 w 表示水平方向  h表示垂直方向
- */
-
-.conduit_w {
-    height: 20px;
-    box-shadow: inset 0 0 10px 1px #209fc6;
-}
-
-.conduit_h {
-    width: 20px;
-    box-shadow: inset 0 0 10px 1px #209fc6;
-}
-
-
-/*
- * 转接头
- */
-
 .adapter_2 {
-    box-shadow: inset 0 0 10px 1px #209fc6;
-    width: 20px;
-    height: 20px;
+    background-color: #209fc6;
+    width: 15px;
+    height: 15px;
     background-size: 100% 100%;
     z-index: 50;
 }
 
 .adapter_3 {
-    box-shadow: inset 0 0 10px 1px #209fc6;
-    width: 25px;
-    height: 25px;
+    box-shadow: inset 0 0 7px 1px #209fc6;
+    border: 3px solid #209fc6;
+    width: 10px;
+    height: 10px;
     background-size: 100% 100%;
     z-index: 50;
 }
 
+/* 向右 */
 .rotate360 {
     transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -45,7 +28,8 @@
     /* Opera */
 }
 
-.rotate270 {
+/* 向上 */
+.up-tf {
     transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     /* IE 9 */
@@ -57,7 +41,8 @@
     /* Opera */
 }
 
-.rotate180 {
+/* 向右*/
+.right-tf {
     transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     /* IE 9 */
@@ -69,7 +54,8 @@
     /* Opera */
 }
 
-.rotate90 {
+/* 向下 */
+.down-tf {
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     /* IE 9 */
