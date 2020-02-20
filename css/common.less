@@ -11,11 +11,10 @@ body {
   min-width: 1920px;
 }
 
-// 临时边框
-.border {
-  padding: 0;
-  border: 1px solid #024381;
+hr{
+ border: none;
 }
+
 
 .echart {
   width: 100%;
@@ -71,7 +70,9 @@ body {
 .com_main {
   flex-grow: 1;
   padding: 10px 5px;
-  // background-color: #261a67;
+  padding-bottom: 0;
+  display: flex;
+  height: 100%;
 }
 
 // 共用标题
@@ -144,6 +145,7 @@ body {
   .com-alarm_title {
     font-size: 15px;
     margin: 20px 0;
+    color: #ccc;
   }
 
   .com-alarm_dd {
@@ -335,6 +337,7 @@ body {
 // 光伏页面
 .PV_main {
   .PV_left {
+    width: 30%;
     .PV-left_on {
       height: 80%;
       min-height: 450px;
@@ -367,6 +370,7 @@ body {
   }
 
   .PV_right {
+    width: 70%;
     .PV-right_on {
       height: 35%;
       min-height: 196px;
@@ -441,6 +445,7 @@ body {
     .PV-right_mid {
       height: 30%;
       min-height: 168px;
+      display: flex;
     }
 
     .PV-right_und {
@@ -452,11 +457,13 @@ body {
 
 // 电池堆2
 .bat2_main {
+  flex-direction: column;
   .com_title {
     padding: 34px 0 0 20px;
   }
 
   .bat2_on {
+    display: flex;
     height: 70%;
 
     .bat2-on_box {
@@ -527,7 +534,7 @@ body {
 
       .com-mid_cont {
         flex-grow: 1;
-
+        display: flex;
         .bat2-mid_left {
           .bat2-mid_form {
             height: 65%;
@@ -602,7 +609,8 @@ body {
   .bat2_dow {
     height: 30%;
     position: relative;
-
+    flex-grow: 1;
+    display: flex;
     .dow_ZS {
       width: 25px;
       height: 45px;
@@ -804,13 +812,20 @@ body {
 
 // 故障模拟
 .fault_main {
-  .on_row {
-    height: 35%;
+  .fault_box{
+    width: 30%;
+    .on_row {
+      height: 35%;
+    }
+  
+    .und_row {
+      height: 65%;
+    }
+  }
+  .fault_mid{
+    width: 40%;
   }
 
-  .und_row {
-    height: 65%;
-  }
 
   .fault_cont {
     text-align: center;
@@ -845,6 +860,7 @@ body {
 
 // 电池堆2
 .bat3_main {
+
   .com_title {
     padding: 34px 0 0 20px;
   }
@@ -870,6 +886,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
 
         .bat3-left-cd_bg {
           width: 114px;
@@ -881,6 +898,9 @@ body {
           margin-top: 10px;
           text-align: center;
         }
+      }
+      .bat3-left_echarts{
+        height: 100%;
       }
     }
 

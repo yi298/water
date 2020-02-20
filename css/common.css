@@ -9,9 +9,8 @@ body {
   -webkit-text-size-adjust: none;
   min-width: 1920px;
 }
-.border {
-  padding: 0;
-  border: 1px solid #024381;
+hr {
+  border: none;
 }
 .echart {
   width: 100%;
@@ -56,6 +55,9 @@ body {
 .com_main {
   flex-grow: 1;
   padding: 10px 5px;
+  padding-bottom: 0;
+  display: flex;
+  height: 100%;
 }
 .com_title {
   font-size: 18px;
@@ -111,6 +113,7 @@ body {
 .com_alarm .com-alarm_title {
   font-size: 15px;
   margin: 20px 0;
+  color: #ccc;
 }
 .com_alarm .com-alarm_dd {
   font-size: 15px;
@@ -260,6 +263,9 @@ body {
   left: 136px;
   cursor: pointer;
 }
+.PV_main .PV_left {
+  width: 30%;
+}
 .PV_main .PV_left .PV-left_on {
   height: 80%;
   min-height: 450px;
@@ -284,6 +290,9 @@ body {
   text-align: center;
   font-size: 25px;
   box-shadow: inset 0 0 12px 1px #4288b9;
+}
+.PV_main .PV_right {
+  width: 70%;
 }
 .PV_main .PV_right .PV-right_on {
   height: 35%;
@@ -347,15 +356,20 @@ body {
 .PV_main .PV_right .PV-right_mid {
   height: 30%;
   min-height: 168px;
+  display: flex;
 }
 .PV_main .PV_right .PV-right_und {
   height: 35%;
   min-height: 196px;
 }
+.bat2_main {
+  flex-direction: column;
+}
 .bat2_main .com_title {
   padding: 34px 0 0 20px;
 }
 .bat2_main .bat2_on {
+  display: flex;
   height: 70%;
 }
 .bat2_main .bat2_on .bat2-on_box {
@@ -414,6 +428,7 @@ body {
 }
 .bat2_main .bat2_on .bat2-on_mid .com-mid_cont {
   flex-grow: 1;
+  display: flex;
 }
 .bat2_main .bat2_on .bat2-on_mid .com-mid_cont .bat2-mid_left .bat2-mid_form {
   height: 65%;
@@ -468,6 +483,8 @@ body {
 .bat2_main .bat2_dow {
   height: 30%;
   position: relative;
+  flex-grow: 1;
+  display: flex;
 }
 .bat2_main .bat2_dow .dow_ZS {
   width: 25px;
@@ -623,11 +640,17 @@ body {
   height: 20px;
   font-size: 12px;
 }
-.fault_main .on_row {
+.fault_main .fault_box {
+  width: 30%;
+}
+.fault_main .fault_box .on_row {
   height: 35%;
 }
-.fault_main .und_row {
+.fault_main .fault_box .und_row {
   height: 65%;
+}
+.fault_main .fault_mid {
+  width: 40%;
 }
 .fault_main .fault_cont {
   text-align: center;
@@ -672,6 +695,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .bat3_main .bat3_left .on_row .bat3-left_cd .bat3-left-cd_bg {
   width: 114px;
@@ -681,6 +705,9 @@ body {
   font-size: 14px;
   margin-top: 10px;
   text-align: center;
+}
+.bat3_main .bat3_left .on_row .bat3-left_echarts {
+  height: 100%;
 }
 .bat3_main .bat3_left .und_row .bat3-left_img {
   width: 254px;

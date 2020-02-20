@@ -56,13 +56,13 @@ function echartsBox() {
       },
       // startAngle: -20,  // 起始角度
       data: [{
-          value: 30,
-          name: "可放电量"
-        },
-        {
-          value: 70,
-          name: "可充电量"
-        }
+        value: 30,
+        name: "可放电量"
+      },
+      {
+        value: 70,
+        name: "可充电量"
+      }
       ],
       emphasis: {
         itemStyle: {
@@ -157,13 +157,13 @@ function echartsBox() {
       }
     }],
     series: [{
-        type: "bar",
-        barWidth: nowSize(15)
-      },
-      {
-        type: "bar",
-        barWidth: nowSize(15)
-      }
+      type: "bar",
+      barWidth: nowSize(15)
+    },
+    {
+      type: "bar",
+      barWidth: nowSize(15)
+    }
     ]
   });
   bat2_line.resize();
@@ -183,20 +183,12 @@ function echartsBox() {
       textStyle: {
         fontSize: nowSize(14)
       }
-      // 自定义单位
-      // formatter: function (params) {
-      //   var res = '<div><p>' + params[0].name + '月</p></div>'
-      //   for (var i = 0; i < params.length; i++) {
-      //     res += '<p>' + params[i].seriesName + ':' + params[i].data + '</p>'
-      //   }
-      //   return res;
-      // },
     },
     grid: {
       top: "15%",
       left: "10%",
       right: "5%",
-      bottom: "10%",
+      bottom: "0",
       containLabel: true
     },
     dataset: {
@@ -214,6 +206,7 @@ function echartsBox() {
         ["10/19\n18:00", 300]
       ]
     },
+
     xAxis: [{
       type: "category",
       boundaryGap: true, // 间隔
@@ -226,16 +219,26 @@ function echartsBox() {
         onZero: false
       },
       axisLabel: {
+        show:true,
         textStyle: {
           fontSize: nowSize(14)
-        }
+        },
+        interval:0,  
+   rotate:40  
       },
       axisTick: {
         alignWithLabel: true
       }
     }],
+
     yAxis: [{
       name: "( KW )",
+      nameTextStyle: {
+        fontSize: nowSize(14),
+        align: 'center',
+        verticalAlign: 'bottom'
+
+      },
       type: "value",
       min: -120,
       max: 300,
@@ -286,13 +289,13 @@ function echartsBox() {
               0,
               1,
               [{
-                  offset: 0,
-                  color: "#9d83d8"
-                },
-                {
-                  offset: 1,
-                  color: "rgba(108,80,243,0)"
-                }
+                offset: 0,
+                color: "#9d83d8"
+              },
+              {
+                offset: 1,
+                color: "rgba(108,80,243,0)"
+              }
               ],
               false
             ),
@@ -315,121 +318,122 @@ function echartsBox() {
           }
         }
       },
-      data: [-60, 120, 60, 100, 120, 60, 240, 300]
     }]
   });
   bat2_line2.resize();
 }
 
+canvasBox()
+function canvasBox() {
+  canvas_w();
 
-canvas_w();
+  function canvas_w() {
+    var data = {
+      time: nowSize(350), //运动速度
+      mx: 0, //起点位置
+      my: nowSize(6),
+      ly: nowSize(6),
+      canvas_w: nowSize(40),
+      canvas_h: nowSize(6),
+      color: "#27950e", //颜色
+      vx: nowSize(5), //横向流动速度
+      vy: 0,
+      line_w: nowSize(100), //线高
+      fx: "w",
+      width: nowSize(20), //线长
+      jiange: nowSize(25), //间隔
+    };
+    // console.log('canvas_w', data.canvas_w)
+    var res = new Createline(data);
+    res.begin("w1", data);
+    res.begin("w2", data);
+    res.begin("w3", data);
+    res.begin("w4", data);
+    res.begin("w5", data);
+  }
+  canvas_w2();
 
-function canvas_w() {
-  var data = {
-    time: nowSize(350), //运动速度
-    mx: 0, //起点位置
-    my: nowSize(6),
-    ly: nowSize(6),
-    canvas_w: nowSize(40),
-    canvas_h: nowSize(6),
-    color: "#27950e", //颜色
-    vx: nowSize(5), //横向流动速度
-    vy: 0,
-    line_w: nowSize(100), //线高
-    fx: "w",
-    width: nowSize(20), //线长
-    jiange: nowSize(25), //间隔
-  };
-  // console.log('canvas_w', data.canvas_w)
-  var res = new Createline(data);
-  res.begin("w1", data);
-  res.begin("w2", data);
-  res.begin("w3", data);
-  res.begin("w4", data);
-  res.begin("w5", data);
-}
-canvas_w2();
+  function canvas_w2() {
+    var data = {
+      time: nowSize(300), //运动速度
+      mx: 0, //起点位置
+      my: nowSize(6),
+      ly: nowSize(6),
+      canvas_w: nowSize(164),
+      canvas_h: nowSize(6),
+      color: "#27950e", //颜色
+      vx: nowSize(5), //横向流动速度
+      vy: 0,
+      line_w: nowSize(100), //线高
+      fx: "w",
+      width: nowSize(25), //线长
+      jiange: nowSize(30), //间隔
+    };
+    // console.log('canvas_w', data.canvas_w)
+    var res = new Createline(data);
+    res.begin("w5", data);
+    res.begin("w6", data);
+    res.begin("w7", data);
+    res.begin("w8", data);
+    res.begin("w9", data);
+    res.begin("w10", data);
+    res.begin("w11", data);
+  }
 
-function canvas_w2() {
-  var data = {
-    time: nowSize(350), //运动速度
-    mx: 0, //起点位置
-    my: nowSize(6),
-    ly: nowSize(6),
-    canvas_w: nowSize(164),
-    canvas_h: nowSize(6),
-    color: "#27950e", //颜色
-    vx: nowSize(5), //横向流动速度
-    vy: 0,
-    line_w: nowSize(100), //线高
-    fx: "w",
-    width: nowSize(20), //线长
-    jiange: nowSize(25), //间隔
-  };
-  // console.log('canvas_w', data.canvas_w)
-  var res = new Createline(data);
-  res.begin("w5", data);
-  res.begin("w6", data);
-  res.begin("w7", data);
-  res.begin("w8", data);
-  res.begin("w9", data);
-  res.begin("w10", data);
-  res.begin("w11", data);
-}
+  canvas_h1();
 
-canvas_h1();
+  function canvas_h1() {
+    var data = {
+      time: nowSize(150), //运动速度
+      mx: 0, //起点位置
+      my: nowSize(6),
+      ly: nowSize(6),
+      canvas_w: nowSize(200),
+      canvas_h: nowSize(10),
+      color: "#27950e", //颜色
+      vx: nowSize(5), //横向流动速度
+      vy: 0,
+      line_w: nowSize(100), //线高
+      fx: "w",
+      width: nowSize(50), //线长
+      jiange: nowSize(30), //间隔
+    };
+    var res = new Createline(data);
+    res.begin("h1", data);
+  }
+  canvas_h2();
 
-function canvas_h1() {
-  var data = {
-    time: nowSize(150), //运动速度
-    mx: 0, //起点位置
-    my: nowSize(6),
-    ly: nowSize(6),
-    canvas_w: nowSize(200),
-    canvas_h: nowSize(10),
-    color: "#27950e", //颜色
-    vx: nowSize(5), //横向流动速度
-    vy: 0,
-    line_w: nowSize(100), //线高
-    fx: "w",
-    width: nowSize(50), //线长
-    jiange: nowSize(30), //间隔
-  };
-  var res = new Createline(data);
-  res.begin("h1", data);
-}
-canvas_h2();
+  function canvas_h2() {
+    var data = {
+      time: nowSize(350), //运动速度
+      mx: 0, //起点位置
+      my: nowSize(6),
+      ly: nowSize(6),
+      canvas_w: nowSize(200),
+      canvas_h: nowSize(10),
+      color: "#27950e", //颜色
+      vx: nowSize(5), //横向流动速度
+      vy: 0,
+      line_w: nowSize(100), //线高
+      fx: "w",
+      width: nowSize(60), //线长
+      jiange: nowSize(40), //间隔
+    };
+    var res = new Createline(data);
+    res.begin("h2", data);
+    res.begin("h3", data);
+    res.begin("h4", data);
+    res.begin("h5", data);
+    res.begin("h6", data);
+    res.begin("h7", data);
+    res.begin("h8", data);
+    res.begin("h9", data);
+    res.begin("h10", data);
+    res.begin("h11", data);
+    res.begin("h12", data);
+    res.begin("h13", data);
+    res.begin("h14", data);
+    res.begin("h15", data);
 
-function canvas_h2() {
-  var data = {
-    time: nowSize(350), //运动速度
-    mx: 0, //起点位置
-    my: nowSize(6),
-    ly: nowSize(6),
-    canvas_w: nowSize(200),
-    canvas_h: nowSize(10),
-    color: "#27950e", //颜色
-    vx: nowSize(20), //横向流动速度
-    vy: 0,
-    line_w: nowSize(100), //线高
-    fx: "w",
-    width: nowSize(60), //线长
-    jiange: nowSize(40), //间隔
-  };
-  var res = new Createline(data);
-  res.begin("h2", data);
-  res.begin("h3", data);
-  res.begin("h4", data);
-  res.begin("h5", data);
-  res.begin("h6", data);
-  res.begin("h7", data);
-  res.begin("h8", data);
-  res.begin("h9", data);
-  res.begin("h10", data);
-  res.begin("h11", data);
-  res.begin("h12", data);
-  res.begin("h13", data);
-  res.begin("h14", data);
-  res.begin("h15", data);
-
+  }
 }

@@ -2,392 +2,394 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" />
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/md.css" />
-    <link rel="stylesheet" href="./css/lg.css">
-
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" /> -->
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./layui/css/layui.css">
+	<link rel="stylesheet" href="./css/base.css" />
+	<link rel="stylesheet" href="./css/common.css" />
+	<link rel="stylesheet" href="./css/md.css" />
+	<link rel="stylesheet" href="./css/lg.css" />
 </head>
 
 <body style="background-image: url('./static/bg.jpg');">
-    <div class="header bg" style="background-image: url('./static/title.png');">
-        <div class="header_logo bg" style="background-image: url('static/logo.png');">
-            logo
-        </div>
-        <div class="header_right">
-            <div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
-            <div class="header-logout bg" style="background-image: url('/static/button.png');">
-                退出
-            </div>
-        </div>
-    </div>
-    <div class="com_main PV_main row">
-        <div class="col-lg-3 PV_left bg" style="background-image: url('./static/PV_left.png');">
-            <div class="PV-left_on">
-                <div class="com_title"><span>&nbsp;&nbsp;</span>电站情况</div>
-                <form class="layui-form" action="">
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">电站容量：</label>
-                        <div class="layui-input-inline input-null">1000</div>
-                        <div class="layui-form-mid layui-word-aux">KWp</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">年发电量：</label>
-                        <div class="layui-input-inline input-null">11561001.8</div>
-                        <div class="layui-form-mid layui-word-aux">KWp</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">光伏组件数量：</label>
-                        <div class="layui-input-inline input-null">4334</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">光伏陈列面积：</label>
-                        <div class="layui-input-inline input-null">6666</div>
-                        <div class="layui-form-mid layui-word-aux">㎡</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">逆变器数量：</label>
-                        <div class="layui-input-inline input-null">10</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">安装地点：</label>
-                        <div class="layui-input-inline input-text">上海浦东新区</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">投运日期：</label>
-                        <div class="layui-input-inline input-text">2020-1-7</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">电话系统集成商：</label>
-                        <div class="layui-input-inline input-text">上海东方电力有限公司</div>
-                    </div>
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">电站投资商：</label>
-                        <div class="layui-input-inline input-text">上海区政府</div>
-                    </div>
-                </form>
-                <div class="com_cardBox">
-                    <div class="row">
-                        <div class="layui-card col-lg-6">
-                            <div class="layui-card-header">辐照</div>
-                            <div class="layui-card-body">400W/㎡/</div>
-                        </div>
-                        <div class="layui-card col-lg-6">
-                            <div class="layui-card-header">光伏组件温度</div>
-                            <div class="layui-card-body">30℃</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="layui-card col-lg-6">
-                            <div class="layui-card-header">环境温度</div>
-                            <div class="layui-card-body">30℃</div>
-                        </div>
-                        <div class="layui-card col-lg-6">
-                            <div class="layui-card-header">风速</div>
-                            <div class="layui-card-body">2.41m/s</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="PV-left_und">
-                <div class="com_title pt"><span>&nbsp;&nbsp;</span>电表读数</div>
-                <ul class="PV_meter">
-                    <li class="PV-meter_li"></li>
-                    <li class="PV-meter_li"></li>
-                    <li class="PV-meter_li">6</li>
-                    <li class="PV-meter_li">6</li>
-                    <li class="PV-meter_li">6</li>
-                    <li class="PV-meter_li">6</li>
-                    <li class="PV-meter_li">6</li>
-                    <li class="PV-meter_li">.</li>
-                    <li class="PV-meter_li">0</li>
-                    <li class="PV-meter_li">0</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-9 PV_right bg" style="background-image: url('./static/PV_right.png');">
-            <div class="PV-right_on">
-                <div class="com_title"><span>&nbsp;&nbsp;</span>实时信息</div>
-                <ul class="PV_time">
-                    <li class="PV-time_li">
-                        <p class="PV-time_p">今日发电量</p>
-                        <div class="PV-time_bg bg PV-time-w1" style="background-image: url('./static/PV_y5.png');">
-                            <p class="PV-time_num">2.9</p>
-                            <p class="PV-time_danwei">KWh</p>
-                        </div>
-                    </li>
-                    <li class="PV-time_li">
-                        <p class="PV-time_p">当前发电总功率</p>
-                        <div class="PV-time_bg bg PV-time-w2" style="background-image: url('./static/PV_y6.png');">
-                            <p class="PV-time_num">322.23</p>
-                            <p class="PV-time_danwei">KW</p>
-                        </div>
-                    </li>
-                    <li class="PV-time_li">
-                        <p class="PV-time_p">总发电量</p>
-                        <div class="PV-time_bg bg PV-time-w3" style="background-image: url('./static/PV_y7.png');">
-                            <p class="PV-time_num">522.53</p>
-                            <p class="PV-time_danwei">KWh</p>
-                        </div>
-                    </li>
-                    <li class="PV-time_li">
-                        <p class="PV-time_p">发电小时数</p>
-                        <div class="PV-time_bg bg PV-time-w4" style="background-image: url('./static/PV_y8.png');">
-                            <p class="PV-time_num">16H</p>
-                        </div>
-                    </li>
-                    <li class="PV-time_li">
-                        <p class="PV-time_p">CO减排量</p>
-                        <div class="PV-time_bg bg PV-time-w5" style="background-image: url('./static/PV_y9.png');">
-                            <p class="PV-time_num">552.53</p>
-                            <p class="PV-time_danwei">KG</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="PV-right_mid row">
-                <div class="col-lg-4">
-                    <div class="com_title pt"><span>&nbsp;&nbsp;</span>分析评估告警</div>
-                    <dl class="com_alarm">
-                        <dt class="com-alarm_title">光伏电站监控系统告警情况：</dt>
-                        <dd class="com-alarm_dd">
-                            <span class="com-alarm-dd_badge">1</span>紧急告警：<span class="yellow">5</span>个
-                        </dd>
-                        <dd class="com-alarm_dd">
-                            <span class="com-alarm-dd_badge">2</span>重要告警：<span class="red">4</span>个
-                        </dd>
-                        <dd class="com-alarm_dd">
-                            <span class="com-alarm-dd_badge">3</span>一般告警：<span class="orange">7</span>个
-                        </dd>
-                        <dd class="com-alarm_dd">
-                            <span class="com-alarm-dd_badge">4</span>信息告警：<span class="blue">14</span>个
-                        </dd>
-                    </dl>
-                </div>
-                <div class="col-lg-8">
-                    <div class="com_title pt"><span>&nbsp;&nbsp;</span>发电量</div>
-                    <div id="PV_line" class="echart">折线图</div>
-                </div>
-            </div>
-            <div class="PV-right_und">
-                <div class="com_title pt"><span>&nbsp;&nbsp;</span>发电统计</div>
-                <div id="PV_line2" class="echart_line">折线图</div>
-            </div>
-        </div>
-    </div>
+	<div class="header bg" style="background-image: url('./static/title.png');">
+		<div class="header_logo bg" style="background-image: url('static/logo.png');">
+			logo
+		</div>
+		<div class="header_right">
+			<div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
+			<div class="header-logout bg" style="background-image: url('/static/button.png');">
+				退出
+			</div>
+		</div>
+	</div>
+	<div class="com_main PV_main">
+		<div class="PV_left bg" style="background-image: url('./static/PV_left.png');">
+			<div class="PV-left_on">
+				<div class="com_title"><span>&nbsp;&nbsp;</span>电站情况</div>
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">电站容量：</label>
+						<div class="layui-input-inline input-null">1000</div>
+						<div class="layui-form-mid layui-word-aux">KWp</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">年发电量：</label>
+						<div class="layui-input-inline input-null">11561001.8</div>
+						<div class="layui-form-mid layui-word-aux">KWp</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">光伏组件数量：</label>
+						<div class="layui-input-inline input-null">4334</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">光伏陈列面积：</label>
+						<div class="layui-input-inline input-null">6666</div>
+						<div class="layui-form-mid layui-word-aux">㎡</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">逆变器数量：</label>
+						<div class="layui-input-inline input-null">10</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">安装地点：</label>
+						<div class="layui-input-inline input-text">上海浦东新区</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">投运日期：</label>
+						<div class="layui-input-inline input-text">2020-1-7</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">电话系统集成商：</label>
+						<div class="layui-input-inline input-text">上海东方电力有限公司</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">电站投资商：</label>
+						<div class="layui-input-inline input-text">上海区政府</div>
+					</div>
+				</form>
+				<div class="com_cardBox">
+					<div class="row">
+						<div class="layui-card col-lg-6">
+							<div class="layui-card-header">辐照</div>
+							<div class="layui-card-body">400W/㎡/</div>
+						</div>
+						<div class="layui-card col-lg-6">
+							<div class="layui-card-header">光伏组件温度</div>
+							<div class="layui-card-body">30℃</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="layui-card col-lg-6">
+							<div class="layui-card-header">环境温度</div>
+							<div class="layui-card-body">30℃</div>
+						</div>
+						<div class="layui-card col-lg-6">
+							<div class="layui-card-header">风速</div>
+							<div class="layui-card-body">2.41m/s</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="PV-left_und">
+				<div class="com_title pt"><span>&nbsp;&nbsp;</span>电表读数</div>
+				<ul class="PV_meter">
+					<li class="PV-meter_li"></li>
+					<li class="PV-meter_li"></li>
+					<li class="PV-meter_li">6</li>
+					<li class="PV-meter_li">6</li>
+					<li class="PV-meter_li">6</li>
+					<li class="PV-meter_li">6</li>
+					<li class="PV-meter_li">6</li>
+					<li class="PV-meter_li">.</li>
+					<li class="PV-meter_li">0</li>
+					<li class="PV-meter_li">0</li>
+				</ul>
+			</div>
+		</div>
+		<div class="PV_right bg" style="background-image: url('./static/PV_right.png');">
+			<div class="PV-right_on">
+				<div class="com_title"><span>&nbsp;&nbsp;</span>实时信息</div>
+				<ul class="PV_time">
+					<li class="PV-time_li">
+						<p class="PV-time_p">今日发电量</p>
+						<div class="PV-time_bg bg PV-time-w1" style="background-image: url('./static/PV_y5.png');">
+							<p class="PV-time_num">2.9</p>
+							<p class="PV-time_danwei">KWh</p>
+						</div>
+					</li>
+					<li class="PV-time_li">
+						<p class="PV-time_p">当前发电总功率</p>
+						<div class="PV-time_bg bg PV-time-w2" style="background-image: url('./static/PV_y6.png');">
+							<p class="PV-time_num">322.23</p>
+							<p class="PV-time_danwei">KW</p>
+						</div>
+					</li>
+					<li class="PV-time_li">
+						<p class="PV-time_p">总发电量</p>
+						<div class="PV-time_bg bg PV-time-w3" style="background-image: url('./static/PV_y7.png');">
+							<p class="PV-time_num">522.53</p>
+							<p class="PV-time_danwei">KWh</p>
+						</div>
+					</li>
+					<li class="PV-time_li">
+						<p class="PV-time_p">发电小时数</p>
+						<div class="PV-time_bg bg PV-time-w4" style="background-image: url('./static/PV_y8.png');">
+							<p class="PV-time_num">16H</p>
+						</div>
+					</li>
+					<li class="PV-time_li">
+						<p class="PV-time_p">CO减排量</p>
+						<div class="PV-time_bg bg PV-time-w5" style="background-image: url('./static/PV_y9.png');">
+							<p class="PV-time_num">552.53</p>
+							<p class="PV-time_danwei">KG</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="PV-right_mid row">
+				<div class="col-lg-4">
+					<div class="com_title pt"><span>&nbsp;&nbsp;</span>分析评估告警</div>
+					<dl class="com_alarm">
+						<dt class="com-alarm_title">光伏电站监控系统告警情况：</dt>
+						<dd class="com-alarm_dd">
+							<span class="com-alarm-dd_badge">1</span>紧急告警：<span class="yellow">5</span>个
+						</dd>
+						<dd class="com-alarm_dd">
+							<span class="com-alarm-dd_badge">2</span>重要告警：<span class="red">4</span>个
+						</dd>
+						<dd class="com-alarm_dd">
+							<span class="com-alarm-dd_badge">3</span>一般告警：<span class="orange">7</span>个
+						</dd>
+						<dd class="com-alarm_dd">
+							<span class="com-alarm-dd_badge">4</span>信息告警：<span class="blue">14</span>个
+						</dd>
+					</dl>
+				</div>
+				<div class="col-lg-8">
+					<div class="com_title pt"><span>&nbsp;&nbsp;</span>发电量</div>
+					<div id="PV_line" class="echart">折线图</div>
+				</div>
+			</div>
+			<div class="PV-right_und">
+				<div class="com_title pt"><span>&nbsp;&nbsp;</span>发电统计</div>
+				<div id="PV_line2" class="echart_line">折线图</div>
+			</div>
+		</div>
+	</div>
 </body>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+<!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script> -->
+<script src="./js/jQuery.js"></script>
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="./layui/layui.all.js"></script>
 <script src="./js/echarts.min.js"></script>
 <script>
-    //当前视口宽度
-    let nowClientWidth = document.documentElement.clientWidth;
+	//当前视口宽度
+	let nowClientWidth = document.documentElement.clientWidth;
 
-    //  换算方法
-    function nowSize(val, initWidth = 1920) {
-        return val * (nowClientWidth / initWidth);
-    }
+	//  换算方法
+	function nowSize(val, initWidth = 1920) {
+		return val * (nowClientWidth / initWidth);
+	}
 
-    // PV 柱状图
-    PV_line = echarts.init(document.getElementById("PV_line"));
-    PV_line.setOption({
-        color: ["#00ffff"],
-        // legend: {},
-        tooltip: {},
-        grid: {
-            top: "20%",
-            left: "10%",
-            right: "10%",
-            bottom: "10%",
-            containLabel: true
-        },
-        dataset: {
-            source: [
-                ["日期", "发电"],
-                ["8/21", 45],
-                ["8/28", 60],
-                ["9/4", 90],
-                ["9/11", 40],
-                ["9/18", 100],
-                ["9/25", 80],
-                ["10/1", 70],
-                ["10/8", 55],
-                ["10/15", 85],
-                ["10/22", 60]
-            ]
-        },
-        xAxis: {
-            type: "category",
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#768ea3", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                }
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14)
-                }
-            },
-            boundaryGap: true, // 间隔
-            axisTick: {
-                alignWithLabel: true
-            },
-        },
-        yAxis: {
-            name: "( kWh )",
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#768ea3", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                }
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14)
-                }
-            },
-            splitLine: {
-                // 分隔线
-                show: true,
-                lineStyle: {
-                    color: ["#5864a1"],
-                    while: nowSize(1)
-                }
-            }
-        },
-        series: [{
-            type: "bar",
-            barWidth: nowSize(30)
-        }]
-    });
-    PV_line.resize();
+	// PV 柱状图
+	PV_line = echarts.init(document.getElementById("PV_line"));
+	PV_line.setOption({
+		color: ["#00ffff"],
+		// legend: {},
+		tooltip: {},
+		grid: {
+			top: "20%",
+			left: "10%",
+			right: "10%",
+			bottom: "10%",
+			containLabel: true
+		},
+		dataset: {
+			source: [
+				["日期", "发电"],
+				["8/21", 45],
+				["8/28", 60],
+				["9/4", 90],
+				["9/11", 40],
+				["9/18", 100],
+				["9/25", 80],
+				["10/1", 70],
+				["10/8", 55],
+				["10/15", 85],
+				["10/22", 60]
+			]
+		},
+		xAxis: {
+			type: "category",
+			axisLine: {
+				lineStyle: {
+					type: "solid",
+					color: "#768ea3", //轴线的颜色
+					width: nowSize(1) //坐标线的宽度
+				}
+			},
+			axisLabel: {
+				textStyle: {
+					fontSize: nowSize(14)
+				}
+			},
+			boundaryGap: true, // 间隔
+			axisTick: {
+				alignWithLabel: true
+			},
+		},
+		yAxis: {
+			name: "( kWh )",
+			axisLine: {
+				lineStyle: {
+					type: "solid",
+					color: "#768ea3", //轴线的颜色
+					width: nowSize(1) //坐标线的宽度
+				}
+			},
+			axisLabel: {
+				textStyle: {
+					fontSize: nowSize(14)
+				}
+			},
+			splitLine: {
+				// 分隔线
+				show: true,
+				lineStyle: {
+					color: ["#5864a1"],
+					while: nowSize(1)
+				}
+			}
+		},
+		series: [{
+			type: "bar",
+			barWidth: nowSize(30)
+		}]
+	});
+	PV_line.resize();
 
-    // bat_2 折线图
-    PV_line2 = echarts.init(document.getElementById("PV_line2"));
-    PV_line2.setOption({
-        color: ["#FF4DCB", "#2BFAFF"], //蓝色、紫色
-        tooltip: {
-            trigger: "axis",
-            axisPointer: {
-                type: "cross",
-                label: {
-                    backgroundColor: "#6a7985"
-                }
-            },
-        },
-        legend: {
-            right: '5%',
-            data: ['2018', '2019'],
-            textStyle: {
-                color: ["#FF4DCB", "#2BFAFF"],
-                fontSize: nowSize(14)
-            },
-            itemWidth: nowSize(10),
-            itemHeight: nowSize(10),
-            itemGap: nowSize(12)
-        },
-        grid: {
-            top: "20%",
-            left: "5%",
-            right: "5%",
-            bottom: "5%",
-            containLabel: true
-        },
-        xAxis: [{
-            // name: "2019",
-            type: "category",
-            boundaryGap: true, // 间隔
-            axisTick: {
-                alignWithLabel: true
-            },
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#5864a1", //轴线的颜色
-                    width: nowSize(1) //坐标线的宽度
-                }
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14)
-                }
-            }
-        }],
-        yAxis: [{
-            name: "( kwh )",
-            type: "value",
-            min: 0,
-            max: 120,
-            splitNumber: nowSize(7),
-            axisLine: {
-                lineStyle: {
-                    type: "solid",
-                    color: "#5864a1", //轴线的颜色
-                    width: nowSize(0) //坐标线的宽度
-                }
-            },
-            splitLine: {
-                // 分隔线
-                show: true,
-                lineStyle: {
-                    color: ["#252a7d"],
-                    width: nowSize(1)
-                }
-            },
-            axisLabel: {
-                textStyle: {
-                    fontSize: nowSize(14)
-                }
-            }
-        }],
-        dataset: {
-            source: [
-                ["月份", "2018", "2019"],
-                ["一月", 45, 30],
-                ["二月", 40, 70],
-                ["三月", 110, 75],
-                ["四月", 85, 65],
-                ["五月", 45, 25],
-                ["六月", 55, 55],
-                ["七月", 20, 80],
-                ["八月", 100, 40],
-                ["九月", 20, 80],
-                ["十月", 85, 65],
-                ["十一月", 20, 40],
-                ["十二月", 45, 65],
-            ]
-        },
-        series: [{
-            name: "2018",
-            type: "line",
-            // stack: "总量",
-            symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: nowSize(5), //圆点大小
-            lineStyle: {
-                width: nowSize(1)
-            }
-        }, {
-            name: "2019",
-            type: "line",
-            // stack: "总量",
-            symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
-            symbolSize: nowSize(5), //圆点大小
-            lineStyle: {
-                width: nowSize(1)
-            }
-        }]
-    });
-    PV_line2.resize();
+	// bat_2 折线图
+	PV_line2 = echarts.init(document.getElementById("PV_line2"));
+	PV_line2.setOption({
+		color: ["#FF4DCB", "#2BFAFF"], //蓝色、紫色
+		tooltip: {
+			trigger: "axis",
+			axisPointer: {
+				type: "cross",
+				label: {
+					backgroundColor: "#6a7985"
+				}
+			},
+		},
+		legend: {
+			right: '5%',
+			data: ['2018', '2019'],
+			textStyle: {
+				color: ["#FF4DCB", "#2BFAFF"],
+				fontSize: nowSize(14)
+			},
+			itemWidth: nowSize(10),
+			itemHeight: nowSize(10),
+			itemGap: nowSize(12)
+		},
+		grid: {
+			top: "20%",
+			left: "5%",
+			right: "5%",
+			bottom: "5%",
+			containLabel: true
+		},
+		xAxis: [{
+			// name: "2019",
+			type: "category",
+			boundaryGap: true, // 间隔
+			axisTick: {
+				alignWithLabel: true
+			},
+			axisLine: {
+				lineStyle: {
+					type: "solid",
+					color: "#5864a1", //轴线的颜色
+					width: nowSize(1) //坐标线的宽度
+				}
+			},
+			axisLabel: {
+				textStyle: {
+					fontSize: nowSize(14)
+				}
+			}
+		}],
+		yAxis: [{
+			name: "( kwh )",
+			type: "value",
+			min: 0,
+			max: 120,
+			splitNumber: nowSize(7),
+			axisLine: {
+				lineStyle: {
+					type: "solid",
+					color: "#5864a1", //轴线的颜色
+					width: nowSize(0) //坐标线的宽度
+				}
+			},
+			splitLine: {
+				// 分隔线
+				show: true,
+				lineStyle: {
+					color: ["#252a7d"],
+					width: nowSize(1)
+				}
+			},
+			axisLabel: {
+				textStyle: {
+					fontSize: nowSize(14)
+				}
+			}
+		}],
+		dataset: {
+			source: [
+				["月份", "2018", "2019"],
+				["一月", 45, 30],
+				["二月", 40, 70],
+				["三月", 110, 75],
+				["四月", 85, 65],
+				["五月", 45, 25],
+				["六月", 55, 55],
+				["七月", 20, 80],
+				["八月", 100, 40],
+				["九月", 20, 80],
+				["十月", 85, 65],
+				["十一月", 20, 40],
+				["十二月", 45, 65],
+			]
+		},
+		series: [{
+			name: "2018",
+			type: "line",
+			// stack: "总量",
+			symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
+			symbolSize: nowSize(5), //圆点大小
+			lineStyle: {
+				width: nowSize(1)
+			}
+		}, {
+			name: "2019",
+			type: "line",
+			// stack: "总量",
+			symbol: "circle", //圆点样式'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 'none'
+			symbolSize: nowSize(5), //圆点大小
+			lineStyle: {
+				width: nowSize(1)
+			}
+		}]
+	});
+	PV_line2.resize();
 </script>
 
 </html>
