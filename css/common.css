@@ -507,7 +507,7 @@ hr {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 45px;
+  top: 28px;
   left: 160px;
   height: 80%;
 }
@@ -591,13 +591,6 @@ hr {
 .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody {
   display: flex;
   align-items: center;
-}
-.bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link-wkeyBody {
-  position: relative;
-}
-.bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link-wkeyBody .wkey2 {
-  position: absolute;
-  bottom: -20px;
 }
 .bat2_main .bat2_dow .bat2-linkBody .bat2_link .bat2-link_iconBody .bat2-link_kg {
   position: relative;

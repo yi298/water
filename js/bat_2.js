@@ -6,6 +6,7 @@ function nowSize(val, initWidth = 1920) {
   return val * (nowClientWidth / initWidth);
 }
 
+// 图表
 echartsBox()
 
 function echartsBox() {
@@ -219,12 +220,12 @@ function echartsBox() {
         onZero: false
       },
       axisLabel: {
-        show:true,
+        show: true,
         textStyle: {
           fontSize: nowSize(14)
         },
-        interval:0,  
-   rotate:40  
+        interval: 0,
+        rotate: 40
       },
       axisTick: {
         alignWithLabel: true
@@ -323,10 +324,10 @@ function echartsBox() {
   bat2_line2.resize();
 }
 
+// 管道特效
 canvasBox()
 function canvasBox() {
   canvas_w();
-
   function canvas_w() {
     var data = {
       time: nowSize(350), //运动速度
@@ -434,6 +435,5 @@ function canvasBox() {
     res.begin("h13", data);
     res.begin("h14", data);
     res.begin("h15", data);
-
   }
 }
