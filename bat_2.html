@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
-<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./layui/css/layui.css">
   <link rel="stylesheet" href="./css/base.css" />
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/md.css" />
   <link rel="stylesheet" href="./css/lg.css" />
   <link rel="stylesheet" href="./css/liudong.css" />
 </head>
+
+<style>
+  .laydate-theme-color {}
+</style>
 
 <body style="background-image: url('./static/bg.jpg');">
   <div class="header bg" style="background-image: url('./static/title.png');">
@@ -234,12 +239,18 @@
       <div class="bat2-on_box">
         <div class="on_row bg" style="background-image: url('./static/bat2_right1.png');">
           <div class="com_title"><span>&nbsp;&nbsp;</span>一周日充放电量</div>
-          <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
+            <div class="data_body">
+              <input type="text" class="data_input" id="data1">
+              <div class="data_icon bg" style="background-image: url('./static/bat2_ri.png');"></div>
+            </div>
           <div id="bat2_line" class="echart_line">柱状图</div>
         </div>
-        <div class="on_row bg" style="background-image: url('./static/bat2_right2.png');">
+        <div class="on_row bg" style=" background-image: url('./static/bat2_right2.png');">
           <div class="com_title"><span>&nbsp;&nbsp;</span>历史实时功率</div>
-          <div class="i_ri bg" style="background-image: url('./static/bat2_ri.png');"></div>
+          <div class="data_body">
+            <input type="text" class="data_input" id="data2" placeholder="2020-02-21">
+            <div class="data_icon bg" style="background-image: url('./static/bat2_ri.png');"></div>
+          </div>
           <div id="bat2_line2" class="echart_line">折线图</div>
         </div>
       </div>
@@ -259,7 +270,8 @@
               <canvas id="w1" class="canvas_w right-tf">向左</canvas>
             </li>
             <li class="bat2-link_liIcon bat2-link-wkeyBody">
-              <div class="bat2-link-wkey bg" style="background-image: url('./static/bat2_wk2.png');"></div><!--打开开关 bat2_wk1.png -->
+              <div class="bat2-link-wkey bg" style="background-image: url('./static/bat2_wk2.png');"></div>
+              <!--打开开关 bat2_wk1.png -->
             </li>
             <li class="bat2-link_liIcon bat2-link_hr link_w1">
               <canvas id="w2" class="canvas_w right-tf">默认向右</canvas>
@@ -294,11 +306,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h2" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h2" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h3" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h3" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
                   <ul class="dc_text">
@@ -315,11 +327,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg1.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h4" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h4" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk1.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h5" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h5" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
                   <ul class="dc_text">
@@ -336,11 +348,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h6" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h6" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h7" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h7" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
                   <ul class="dc_text">
@@ -357,11 +369,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h8" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h8" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h9" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h9" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
                   <ul class="dc_text">
@@ -378,11 +390,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h10" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h10" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h11" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h11" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
                   <ul class="dc_text">
@@ -399,11 +411,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h12" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h12" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h13" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h13" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc1.png');">
                   <ul class="dc_text">
@@ -420,11 +432,11 @@
               <li class="bat2-link_liDc">
                 <div class="bat2-link_kg bg" style="background-image: url('./static/bat2_kg2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h14" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h14" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-hkey bg" style="background-image: url('./static/bat2_hk2.png');"></div>
                 <div class="bat2-link_hr2 link_h2">
-              <canvas id="h15" class="canvas_h canvas_h2 down-tf">向下</canvas>
+                  <canvas id="h15" class="canvas_h canvas_h2 down-tf">向下</canvas>
                 </div>
                 <div class="bat2-link-dc bg" style="background-image: url('./static/bat2_dc2.png');">
                   <ul class="dc_text">
@@ -448,8 +460,12 @@
 <script src="./js/jQuery.js"></script>
 <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="./js/echarts.min.js"></script>
+<script src="./layui/layui.all.js"></script>
 <script src="./js/zk_liudong.js"></script>
 <script src="./js/bat_2.js"></script>
 
+<script>
+ 
+</script>
 
 </html>

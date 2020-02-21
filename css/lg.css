@@ -131,12 +131,19 @@
   .bat2_main .com_title {
     padding: 68px 0 0 40px;
   }
-  .bat2_main .bat2_on .bat2-on_box .on_row .i_ri {
-    width: 56px;
-    height: 56px;
-    position: absolute;
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body {
     top: 60px;
     right: 50px;
+  }
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input {
+    margin-right: 20px;
+    font-size: 36px;
+    height: 56px;
+    width: 500px;
+  }
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_icon {
+    width: 56px;
+    height: 56px;
   }
   .bat2_main .bat2_on .bat2-on_box .on_row .layui-form {
     padding: 30px 64px;
@@ -360,6 +367,21 @@
     line-height: 40px;
     margin-right: 10px;
   }
+  .fault_main .fault_cont {
+    padding: 80px 0;
+  }
+  .fault_main .fault_cont .fault-cont_p {
+    font-size: 36px;
+  }
+  .fault_main .fault_cont .fault-cont_img {
+    width: 1148px;
+    height: 908px;
+  }
+  .fault_main .fault_biaoti {
+    width: 550px;
+    height: 150px;
+    margin: 70px auto 0;
+  }
   .bat3_main .com_title {
     padding: 68px 0 0 40px;
   }
@@ -375,55 +397,49 @@
     margin-top: 20px;
   }
   .bat3_main .bat3_left .und_row .bat3-left_img {
-    width: 508px;
-    height: 1034px;
+    width: 406.4px;
+    height: 827.2px;
   }
   .bat3_main .bat3_mid .com_title {
     padding-left: 120px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on {
-    margin: 40px 0;
-  }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid_onform {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid_onform {
     padding-left: 140px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight {
     padding-top: 240px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight .bat3_img {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight .bat3_img {
     width: 646px;
     height: 528px;
     top: -208px;
-    left: 0;
-    right: 0;
   }
-  .bat3_main .bat3_mid .bat3-mid_card {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_card {
     width: 1200px;
-    margin-top: 40px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num {
-    margin-top: 100px;
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num {
+    padding-bottom: 80px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul {
     margin: 0 40px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .num_li {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .num_li {
     font-size: 36px;
     margin-bottom: 20px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .red {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .red {
     border-bottom: 6px solid red;
     font-size: 48px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .green {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .green {
     border-bottom: 6px solid #00ff36;
     font-size: 48px;
   }
   .bat3_main .bat3_right .com-mid_title {
     margin-top: 80px;
   }
-  .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd {
-    margin: 50px 0;
+  .bat3_main .bat3_right .bat3-right_dcBox {
+    padding-bottom: 60px;
   }
   .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text {
     margin: 0 40px;
@@ -434,20 +450,5 @@
   .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_bg {
     width: 90px;
     height: 140px;
-  }
-  .fault_main .fault_cont {
-    padding: 80px 0;
-  }
-  .fault_main .fault_cont .fault-cont_p {
-    font-size: 36px;
-  }
-  .fault_main .fault_cont .fault-cont_img {
-    width: 1148px;
-    height: 908px;
-  }
-  .fault_main .fault_biaoti {
-    width: 550px;
-    height: 150px;
-    margin: 70px auto 0;
   }
 }

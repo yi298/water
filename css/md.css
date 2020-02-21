@@ -151,11 +151,19 @@
   .bat2_main .com_title {
     padding: 22.1px 0 0 13px;
   }
-  .bat2_main .bat2_on .bat2-on_box .on_row .i_ri {
-    width: 18.2px;
-    height: 18.2px;
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body {
     top: 19.5px;
     right: 16.25px;
+  }
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input {
+    margin-right: 6.5px;
+    font-size: 11.7px;
+    height: 18.2px;
+    width: 162.5px;
+  }
+  .bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_icon {
+    width: 18.2px;
+    height: 18.2px;
   }
   .bat2_main .bat2_on .bat2-on_box .on_row .layui-form {
     padding: 9.75px 20.8px;
@@ -384,6 +392,21 @@
     line-height: 14px;
     margin-right: 3px;
   }
+  .fault_main .fault_cont {
+    padding: 26px 0;
+  }
+  .fault_main .fault_cont .fault-cont_p {
+    font-size: 11.7px;
+  }
+  .fault_main .fault_cont .fault-cont_img {
+    width: 373.1px;
+    height: 295.1px;
+  }
+  .fault_main .fault_biaoti {
+    width: 178.75px;
+    height: 48.75px;
+    margin: 22.75px auto 0;
+  }
   .bat3_main .com_title {
     padding: 22.1px 0 0 13px;
   }
@@ -399,80 +422,58 @@
     margin-top: 6.5px;
   }
   .bat3_main .bat3_left .und_row .bat3-left_img {
-    width: 152.4px;
-    height: 310.2px;
+    width: 114.3px;
+    height: 232.65px;
   }
   .bat3_main .bat3_mid .com_title {
     padding-left: 39px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on {
-    margin: 13px 0;
-  }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid_onform {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid_onform {
     padding-left: 45.5px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight {
     padding-top: 78px;
   }
-  .bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight .bat3_img {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight .bat3_img {
     width: 209.95px;
     height: 171.6px;
     top: -67.6px;
-    left: 0;
-    right: 0;
   }
-  .bat3_main .bat3_mid .bat3-mid_card {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_card {
     width: 390px;
-    margin-top: 13px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num {
-    margin-top: 32.5px;
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num {
+    padding-bottom: 26px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul {
     margin: 0 13px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .num_li {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .num_li {
     font-size: 11.7px;
     margin-bottom: 6.5px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .red {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .red {
     border-bottom: 1.95px solid red;
     font-size: 15.6px;
   }
-  .bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .green {
+  .bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .green {
     border-bottom: 1.95px solid #00ff36;
     font-size: 15.6px;
   }
   .bat3_main .bat3_right .com-mid_title {
     margin-top: 26px;
   }
-  .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd {
-    margin: 0;
+  .bat3_main .bat3_right .bat3-right_dcBox {
+    padding-bottom: 19.5px;
   }
   .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text {
     margin: 0 13px;
   }
   .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text li {
     font-size: 7.8px;
-    line-height: 15px;
   }
   .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_bg {
     width: 29.25px;
     height: 45.5px;
-  }
-  .fault_main .fault_cont {
-    padding: 26px 0;
-  }
-  .fault_main .fault_cont .fault-cont_p {
-    font-size: 11.7px;
-  }
-  .fault_main .fault_cont .fault-cont_img {
-    width: 373.1px;
-    height: 295.1px;
-  }
-  .fault_main .fault_biaoti {
-    width: 178.75px;
-    height: 48.75px;
-    margin: 22.75px auto 0;
   }
 }

@@ -180,12 +180,22 @@
     .bat2_on {
       .bat2-on_box {
         .on_row {
-          .i_ri {
-            width   : 28px * 2;
-            height  : 28px * 2;
-            position: absolute;
-            top     : 30px * 2;
-            right   : 25px * 2;
+          .data_body {
+            top  : 30px * 2;
+            right: 25px * 2;
+
+            .data_input {
+              margin-right: 10px * 2;
+              font-size   : 18px * 2;
+              height      : 28px * 2;
+              width       : 250px * 2;
+            }
+
+            .data_icon {
+              width : 28px * 2;
+              height: 28px * 2;
+
+            }
           }
 
           .layui-form {
@@ -446,11 +456,12 @@
     .PV_right {
       .PV-right_on {
         .PV_time {
-          margin : 20px * 2 130px * 2;
-          padding: 0 50px * 2;
-        border: 1px solid #3f4ea8;
-        border-top: none;
-        border-right: none;
+          margin      : 20px * 2 130px * 2;
+          padding     : 0 50px * 2;
+          border      : 1px solid #3f4ea8;
+          border-top  : none;
+          border-right: none;
+
           .PV-time_li {
             .PV-time_p {
               font-size: 15px * 2;
@@ -524,119 +535,6 @@
     }
   }
 
-  // 电池堆3
-  .bat3_main {
-    .com_title {
-      padding: 34px * 2 0 0 20px * 2;
-    }
-
-    .bat3_left {
-      .com_title {
-        padding-left: 40px * 2;
-      }
-
-      .on_row {
-        .bat3-left_cd {
-          .bat3-left-cd_bg {
-            width : 114px * 2;
-            height: 183px * 2;
-          }
-
-          .bat3-left-cd_text {
-            font-size : 14px * 2;
-            margin-top: 10px * 2;
-          }
-        }
-      }
-
-      .und_row {
-        .bat3-left_img {
-          width : 254px * 2;
-          height: 517px * 2;
-        }
-      }
-    }
-
-    .bat3_mid {
-      .com_title {
-        padding-left: 60px * 2;
-      }
-
-      .bat3-mid_on {
-        margin: 20px * 2 0;
-
-        .bat3-mid_onform {
-          padding-left: 70px * 2;
-        }
-
-        .bat3-mid-onRight {
-          padding-top: 120px * 2;
-
-          .bat3_img {
-            width : 323px * 2;
-            height: 264px * 2;
-            top   : -104px * 2;
-            left  : 0;
-            right : 0;
-          }
-        }
-      }
-
-      .bat3-mid_card {
-        width     : 600px * 2;
-        margin-top: 20px * 2;
-      }
-
-      .bat3-mid_num {
-        margin-top: 50px*2;
-
-        .bat3-mid-num_ul {
-          margin: 0 20px * 2;
-
-          .num_li {
-            font-size    : 18px * 2;
-            margin-bottom: 10px * 2;
-          }
-
-          .red {
-            border-bottom: 3px * 2 solid red;
-            font-size    : 24px * 2;
-          }
-
-          .green {
-            border-bottom: 3px * 2 solid #00ff36;
-            font-size    : 24px * 2;
-          }
-        }
-      }
-    }
-
-    .bat3_right {
-      .com-mid_title {
-        margin-top: 40px * 2;
-      }
-
-      .bat3-right_dcBox {
-        .bat3_cd {
-          margin: 25px * 2 0;
-
-          .bat3-dc_text {
-            margin: 0 20px * 2;
-
-            li {
-              font-size: 12px * 2;
-            }
-          }
-
-          .bat3-dc_bg {
-            width : 45px * 2;
-            height: 70px * 2;
-          }
-        }
-      }
-    }
-  }
-
   // 故障模拟
   .fault_main {
     .fault_cont {
@@ -656,6 +554,128 @@
       width : 275px*2;
       height: 75px*2;
       margin: 35px*2 auto 0;
+    }
+  }
+
+  // 电池堆3
+  .bat3_main {
+
+    .com_title {
+      padding: 34px * 2 0 0 20px * 2;
+    }
+
+
+    .bat3_left {
+
+      .com_title {
+        padding-left: 40px * 2;
+      }
+
+      .on_row {
+
+        //修改
+        .bat3-left_cd {
+
+          .bat3-left-cd_bg {
+            width : 114px * 2;
+            height: 183px * 2;
+          }
+
+          .bat3-left-cd_text {
+            font-size : 14px * 2;
+            margin-top: 10px * 2;
+          }
+        }
+       
+      }
+
+      .und_row {
+        .bat3-left_img {
+          width : 254px*1.6;
+          height: 517px*1.6;
+        }
+      }
+    }
+
+    .bat3_mid {
+
+      .com_title {
+        padding-left: 60px * 2;
+      }
+
+      .bat3-mid_content {
+      
+        .bat3-mid_on {
+
+          .bat3-mid_onform {
+            padding-left: 70px * 2;
+          }
+
+          .bat3-mid-onRight {
+            padding-top: 120px * 2;
+
+            .bat3_img {
+              width   : 323px * 2;
+              height  : 264px * 2;
+              top     : -104px * 2;
+            }
+          }
+        }
+
+        .bat3-mid_card {
+          width : 600px * 2;
+        }
+
+        .bat3-mid_num {
+          padding-bottom : 40px * 2;
+
+          .bat3-mid-num_ul {
+            margin        : 0 20px * 2;
+
+            .num_li {
+              font-size    : 18px * 2;
+              margin-bottom: 10px * 2;
+            }
+
+            .red {
+              border-bottom: 3px * 2 solid red;
+              font-size    : 24px * 2;
+            }
+
+            .green {
+              border-bottom: 3px * 2 solid #00ff36;
+              font-size    : 24px * 2;
+            }
+          }
+        }
+      }
+
+    }
+
+    .bat3_right {
+     
+      .com-mid_title {
+        margin-top: 40px * 2;
+      }
+
+      .bat3-right_dcBox {
+        padding-bottom : 30px * 2;
+
+        .bat3_cd {
+          .bat3-dc_text {
+            margin: 0 20px * 2;
+
+            li {
+              font-size: 12px * 2;
+            }
+          }
+
+          .bat3-dc_bg {
+            width : 45px * 2;
+            height: 70px * 2;
+          }
+        }
+      }
     }
   }
 }

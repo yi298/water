@@ -6,6 +6,47 @@ function nowSize(val, initWidth = 1920) {
   return val * (nowClientWidth / initWidth);
 }
 
+
+// 日历
+layui.use('laydate', function () {
+  var laydate = layui.laydate;
+
+  //单日期
+  laydate.render({
+    elem: '#data1' //指定元素
+    , theme: '#036093'
+    ,value:'2020-02-21'
+    , isInitValue: true //是否允许填充初始值，默认为 true
+    , showBottom: false //不显示底部
+  });
+
+  // 双日期
+  laydate.render({
+    elem: '#data2'
+    , type: 'date'
+    , range: '~'
+    , theme: '#036093' //主题
+    // , value: '2018-08-18-2018-08-30' //必须遵循format参数设定的格式
+    // 初始打开回调
+    , ready: function (date) {
+      console.log('初始date', date); //得到初始的日期时间对象：{year: 2018, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+    }
+    // 日期切换后回调
+    , change: function (value, date, endDate) {
+      console.log('切换后value', value); //得到日期生成的值，如：2017-08-18
+      console.log('切换后对象date', date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+      console.log('切换后得结果对象endDate', endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
+    }
+    // 选择完毕后的回调
+    , done: function (value, date, endDate) {
+      console.log('选择完毕后value', value); //得到日期生成的值，如：2017-08-18
+      console.log('选择完毕后date', date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+      console.log('选择完毕后endDate', endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
+    }
+  });
+});
+
+
 // 图表
 echartsBox()
 

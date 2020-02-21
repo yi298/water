@@ -381,12 +381,41 @@ hr {
   height: 50%;
   position: relative;
 }
-.bat2_main .bat2_on .bat2-on_box .on_row .i_ri {
-  width: 28px;
-  height: 28px;
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body {
   position: absolute;
   top: 30px;
   right: 25px;
+  display: flex;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input {
+  background: none;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 18px;
+  height: 28px;
+  width: 250px;
+  color: #ccc;
+  cursor: pointer;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input::-webkit-input-placeholder {
+  /* WebKit browsers 适配谷歌 */
+  color: #ccc;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 适配火狐 */
+  color: #ccc;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input::-moz-placeholder {
+  /* Mozilla Firefox 19+ 适配火狐 */
+  color: #ccc;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_input:-ms-input-placeholder {
+  /* Internet Explorer 10+  适配ie*/
+  color: #ccc;
+}
+.bat2_main .bat2_on .bat2-on_box .on_row .data_body .data_icon {
+  width: 28px;
+  height: 28px;
 }
 .bat2_main .bat2_on .bat2-on_box .on_row .layui-form {
   display: flex;
@@ -702,31 +731,41 @@ hr {
 .bat3_main .bat3_left .on_row .bat3-left_echarts {
   height: 100%;
 }
+.bat3_main .bat3_left .und_row {
+  display: flex;
+  flex-direction: column;
+}
 .bat3_main .bat3_left .und_row .bat3-left_img {
-  width: 254px;
-  height: 517px;
+  width: 203.2px;
+  height: 413.6px;
   margin: auto;
 }
 .bat3_main .bat3_mid {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .bat3_main .bat3_mid .com_title {
   padding-left: 60px;
 }
-.bat3_main .bat3_mid .bat3-mid_on {
-  margin: 20px 0;
+.bat3_main .bat3_mid .bat3-mid_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
-.bat3_main .bat3_mid .bat3-mid_on .layui-form-item {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .layui-form-item {
   display: flex;
 }
-.bat3_main .bat3_mid .bat3-mid_on .bat3-mid_onform {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid_onform {
   padding-left: 70px;
 }
-.bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight {
   position: relative;
   padding-top: 120px;
 }
-.bat3_main .bat3_mid .bat3-mid_on .bat3-mid-onRight .bat3_img {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_on .bat3-mid-onRight .bat3_img {
   width: 323px;
   height: 264px;
   position: absolute;
@@ -735,38 +774,40 @@ hr {
   right: 0;
   margin: auto;
 }
-.bat3_main .bat3_mid .bat3-mid_card {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_card {
   width: 600px;
-  margin-top: 20px;
+  margin: 0 auto;
 }
-.bat3_main .bat3_mid .bat3-mid_num {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  padding-bottom: 40px;
 }
-.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
 }
-.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .num_li {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .num_li {
   font-size: 18px;
   margin-bottom: 10px;
 }
-.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .red {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .red {
   border-bottom: 3px solid red;
   font-weight: 600;
   font-size: 24px;
 }
-.bat3_main .bat3_mid .bat3-mid_num .bat3-mid-num_ul .green {
+.bat3_main .bat3_mid .bat3-mid_content .bat3-mid_num .bat3-mid-num_ul .green {
   border-bottom: 3px solid #00ff36;
   font-weight: 600;
   font-size: 24px;
 }
 .bat3_main .bat3_right {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .bat3_main .bat3_right .com-mid_title {
   margin-top: 40px;
@@ -774,11 +815,22 @@ hr {
 .bat3_main .bat3_right .bat3-right_dcBox {
   display: flex;
   justify-content: space-around;
+  flex-grow: 1;
+  padding-bottom: 30px;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3-dc_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bat3_main .bat3_right .bat3-right_dcBox .bat3-dc_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd {
   display: flex;
   align-items: center;
-  margin: 25px 0;
 }
 .bat3_main .bat3_right .bat3-right_dcBox .bat3_cd .bat3-dc_text {
   margin: 0 20px;

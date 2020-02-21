@@ -19,17 +19,17 @@
 
 <body style="background-image: url('./static/bg.jpg');">
   <div class="header bg" style="background-image: url('./static/title.png');">
-    <div class="header_logo bg" style="background-image: url('static/logo.png');">
-      logo
-    </div>
-    <div class="header_right">
-      <div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
-      <div class="header-logout bg" style="background-image: url('/static/button.png');">
-        退出
-      </div>
-    </div>
-  </div>
-  <div class="com_main row bat3_main">
+		<div class="header_logo bg" style="background-image: url('static/logo.png');">
+			logo
+		</div>
+		<div class="header_right">
+			<div class="header_date">2019-06-18&nbsp;星期三&nbsp;19:20</div>
+			<div class="header-logout bg" style="background-image: url('/static/button.png');">
+				退出
+			</div>
+		</div>
+	</div>
+  <div class="com_main bat3_main">
     <!-- 左 -->
     <div class="bat3_left">
       <div class="on_row row bg" style="background-image: url('./static/bat3_left.png');">
@@ -54,7 +54,8 @@
         <div class="com-mid-title_cr bg" style="background-image: url('./static/bat2_cr.png');"></div>
       </div>
       <div class="com_title"><span>&nbsp;&nbsp;</span>电池电压信息</div>
-      <form class="layui-form row bat3-mid_on" action="">
+     <div class="bat3-mid_content">
+        <form class="layui-form row bat3-mid_on" action="">
         <div class="bat3-mid_onform col-lg-6">
           <div class="layui-form-item">
             <label class="layui-form-label">电压：</label>
@@ -178,6 +179,8 @@
           <li class="num_li red">1000.0 kWh</li>
         </ul>
       </div>
+     </div>
+     
     </div>
     <!-- 右 -->
     <div class="bg bat3_right" style="background-image: url('./static/bat3_right.png');">
